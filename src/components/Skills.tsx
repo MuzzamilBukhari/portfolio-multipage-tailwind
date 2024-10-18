@@ -1,14 +1,9 @@
 "use client";
 import React from "react";
-import Typewriter from "typewriter-effect";
 import { FaHtml5, FaJava, FaPython } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiVisualstudiocode } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
-import { IoLogoVercel } from "react-icons/io5";
 import SkillCard from "./SkillCard";
 import { DiJavascript } from "react-icons/di";
 import { TbBrandCpp } from "react-icons/tb";
