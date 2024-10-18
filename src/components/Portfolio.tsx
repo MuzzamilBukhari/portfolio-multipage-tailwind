@@ -13,10 +13,10 @@ export default function Portfolio() {
           Check out my latest projects
         </h2>
         <p className="mb-8 text-white">
-          These are some of the projects I've been working on, showcasing my
-          expertise in web development, React, and Data Structures & Algorithms
-          (DSA). From building functional calculators to complex quiz systems,
-          each project highlights my skills in TypeScript, Next.js, and
+          These are some of the projects I&apos;ve been working on, showcasing
+          my expertise in web development, React, and Data Structures &
+          Algorithms (DSA). From building functional calculators to complex quiz
+          systems, each project highlights my skills in TypeScript, Next.js, and
           operating systems. Feel free to explore the code on GitHub!
         </p>
         <div className="flex flex-wrap justify-center items-center gap-10">
