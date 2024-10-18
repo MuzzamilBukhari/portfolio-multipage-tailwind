@@ -16,7 +16,7 @@ import { CgVercel } from "react-icons/cg";
 
 export default function Skill() {
   return (
-    <div className="bg-orange-950">
+    <div id="skills" className="bg-orange-950 pt-6">
       <section>
         <div className="text-center mb-20 pt-20">
           <h1 className="sm:text-6xl text-7xl font-blacktext-center font-bold title-font text-white mb-4">

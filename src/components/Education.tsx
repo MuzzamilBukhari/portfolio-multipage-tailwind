@@ -4,7 +4,10 @@ import { FaUniversity, FaSchool } from "react-icons/fa";
 
 const Education = () => {
   return (
-    <section className="text-white bg-orange-950 opacity-[0.99] body-font">
+    <section
+      id="education"
+      className="text-white bg-orange-950 opacity-[0.99] body-font pt-4"
+    >
       <div className="container px-5 py-24 mx-auto flex flex-wrap">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="sm:text-7xl text-6xl font-bold title-font text-white">

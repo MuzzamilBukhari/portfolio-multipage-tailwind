@@ -1,9 +1,10 @@
+import Link from "next/link";
 import React from "react";
 
 const InfoSection = () => {
   return (
     <>
-      <section className="text-white bg-orange-950 body-font pt-28">
+      <section id="info" className="text-white bg-orange-950 body-font pt-28">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ml-12">
             <h1 className="title-font sm:text-6xl text-5xl mb-4 font-bold ">
@@ -19,9 +20,13 @@ const InfoSection = () => {
               user-friendly websites.
             </p>
             <div className="flex justify-center">
-              <button className="inline-flex text-orange-600 font-semibold bg-white border-0 py-2 px-6 focus:outline-none rounded text-lg hover:scale-105 duration-300">
+              <Link
+                href="https://www.linkedin.com/in/muzzamilbukhari/"
+                target="_blank"
+                className="text-orange-600 font-semibold bg-white py-2 px-6 rounded-lg  text-lg hover:scale-105 duration-300"
+              >
                 Hire me
-              </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import Contact from "@/components/Contact";
 import Education from "@/components/Education";
 import InfoSection from "@/components/InfoSection";
+import Portfolio from "@/components/Portfolio";
 import Skills from "@/components/Skills";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <InfoSection />
       <Education />
       <Skills />
+      <Portfolio />
       <Contact />
     </div>
   );
