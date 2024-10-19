@@ -12,7 +12,7 @@ export default function Portfolio() {
         <h2 className="text-lg font-normal text-orange-600 mb-5">
           Check out my latest projects
         </h2>
-        <p className="mb-8 text-white">
+        <p className="mb-8 text-white px-4">
           These are some of the projects I&apos;ve been working on, showcasing
           my expertise in web development, React, and Data Structures &
           Algorithms (DSA). From building functional calculators to complex quiz
@@ -20,7 +20,7 @@ export default function Portfolio() {
           operating systems. Feel free to explore the code on GitHub!
         </p>
         <div className="flex flex-wrap justify-center items-center gap-10">
-          <div className="bg-orange-800 w-[300px] h-[300px] p-5 rounded-lg hover:shadow-lg transition duration-300">
+          <div className="bg-orange-800 w-[300px] h-[300px] p-5 rounded-lg hover:scale-105 hover:shadow-lg transition duration-300">
             <Link
               href="https://qr-code-generator-lake.vercel.app/"
               target="_blank"
@@ -33,10 +33,9 @@ export default function Portfolio() {
               <h3 className="text-lg font-medium text-white mt-4">
                 Project 1 - QR Code Generator
               </h3>
-              <p className="text-gray-400 mt-2"></p>
             </Link>
           </div>
-          <div className="bg-orange-800 w-[300px] h-[300px] p-5 rounded-lg hover:shadow-lg transition duration-300">
+          <div className="bg-orange-800 hover:scale-105 w-[300px] h-[300px] p-5 rounded-lg hover:shadow-lg transition duration-300">
             <Link
               href="https://age-calculator-green-sigma.vercel.app/"
               target="_blank"
@@ -52,7 +51,7 @@ export default function Portfolio() {
               <p className="text-gray-400 mt-2"></p>
             </Link>
           </div>
-          <div className="bg-orange-800 w-[300px] h-[300px] p-5 rounded-lg hover:shadow-lg transition duration-300">
+          <div className="bg-orange-800 hover:scale-105 w-[300px] h-[300px] p-5 rounded-lg hover:shadow-lg transition duration-300">
             <Link href="https://bookstore-mb-nu.vercel.app/" target="_blank">
               <img
                 src="https://s26162.pcdn.co/wp-content/uploads/sites/3/2023/02/used-books.jpg"
@@ -65,7 +64,7 @@ export default function Portfolio() {
               <p className="text-gray-400 mt-2"></p>
             </Link>
           </div>
-          <div className="bg-orange-800  w-[300px] h-[300px] p-5 rounded-lg hover:shadow-lg transition duration-300">
+          <div className="bg-orange-800 hover:scale-105 w-[300px] h-[300px] p-5 rounded-lg hover:shadow-lg transition duration-300">
             <Link href="https://blogger-web.vercel.app/" target="_blank">
               <img
                 src="https://img.freepik.com/free-photo/online-blog_53876-123696.jpg"
@@ -79,7 +78,7 @@ export default function Portfolio() {
             </Link>
           </div>
 
-          <div className="bg-orange-800  w-[300px] h-[300px] p-5 rounded-lg hover:shadow-lg transition duration-300">
+          <div className="bg-orange-800 hover:scale-105 w-[300px] h-[300px] p-5 rounded-lg hover:shadow-lg transition duration-300">
             <Link
               href="https://github.com/MuzzamilBukhari/process-control-block.git"
               target="_blank"
@@ -95,7 +94,7 @@ export default function Portfolio() {
               <p className="text-gray-400 mt-2"></p>
             </Link>
           </div>
-          <div className="bg-orange-800  w-[300px] h-[300px] p-5 rounded-lg hover:shadow-lg transition duration-300">
+          <div className="bg-orange-800 hover:scale-105 w-[300px] h-[300px] p-5 rounded-lg hover:shadow-lg transition duration-300">
             <Link
               href="https://github.com/MuzzamilBukhari/DSA-Project.git"
               target="_blank"

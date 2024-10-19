@@ -1,23 +1,21 @@
 "use client";
 import React from "react";
-import { FaHtml5, FaJava, FaPython } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
+import { FaHtml5, FaJava, FaPython, FaCss3Alt, FaGithub } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
-import SkillCard from "./SkillCard";
 import { DiJavascript } from "react-icons/di";
 import { TbBrandCpp } from "react-icons/tb";
 import { CgVercel } from "react-icons/cg";
+import SkillCard from "./SkillCard";
 
 export default function Skill() {
   return (
-    <div id="skills" className="bg-orange-950 pt-6">
+    <div id="skills" className="bg-orange-950 pt-16">
       <section>
-        <div className="text-center mb-20 pt-20">
-          <h1 className="sm:text-6xl text-7xl font-blacktext-center font-bold title-font text-white mb-4">
+        <div className="text-center mb-12 pt-12">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold title-font text-white mb-4">
             Skills
           </h1>
-          <p className="text-white text-base leading-relaxed xl:w-2/3 lg:w-3/4 mx-auto">
+          <p className="text-white text-sm sm:text-base leading-relaxed max-w-2xl mx-auto px-4">
             I specialize in web development and graphic design, creating
             responsive, user-friendly solutions using technologies like React,
             Next.js, and Tailwind CSS. My skills also extend to Data Structures
@@ -27,33 +25,28 @@ export default function Skill() {
             appealing results while staying current with the latest trends.
           </p>
         </div>
-        <div
-          className="container px-4 py-2 mx-auto flex flex-wrap justify-center items-center space-x-6
-  text-2xl"
-        >
-          {/* Languages icons*/}
-          <SkillCard skill="HTML" icon={FaHtml5} />
-          <SkillCard skill="CSS" icon={FaCss3Alt} />
-          <SkillCard skill="Javascript" icon={DiJavascript} />
-          <SkillCard skill="Typescript" icon={SiTypescript} />
-          <SkillCard skill="Python" icon={FaPython} />
-          <SkillCard skill="Java" icon={FaJava} />
-          <SkillCard skill="C++" icon={TbBrandCpp} />
+
+        <div className="container px-4 py-8 mx-auto">
+          <div className="flex gap-3 justify-center items-center flex-wrap text-2xl">
+            <SkillCard skill="HTML" icon={FaHtml5} />
+            <SkillCard skill="CSS" icon={FaCss3Alt} />
+            <SkillCard skill="Javascript" icon={DiJavascript} />
+            <SkillCard skill="Typescript" icon={SiTypescript} />
+            <SkillCard skill="Python" icon={FaPython} />
+            <SkillCard skill="Java" icon={FaJava} />
+            <SkillCard skill="C++" icon={TbBrandCpp} />
+          </div>
         </div>
       </section>
 
       <section>
-        <div
-          className="container px-4 py-8 mx-auto flex flex-wrap justify-center items-center space-x-6
-  text-2xl"
-        >
-          {/* icons */}
-          <SkillCard skill="Github" icon={FaGithub} />
-          <SkillCard skill="Vercel" icon={CgVercel} size={50} />
+        <div className="container px-4 py-8 mx-auto">
+          <div className="flex flex-wrap gap-6 justify-center items-center text-2xl">
+            <SkillCard skill="Github" icon={FaGithub} />
+            <SkillCard skill="Vercel" icon={CgVercel} size={50} />
+          </div>
         </div>
       </section>
-
-      {/* contatct us */}
     </div>
   );
 }

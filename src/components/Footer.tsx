@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className="body-font bg-orange-950">
       <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-        <Image src={Logo} alt={""} className="w-8 h-8 rounded-[50%] mr-3" />
-        <a className="flex title-font font-medium items-center text-orange-600 mb-4 md:mb-0">
+        <Image src={Logo} alt="Logo" className="w-8 h-8 rounded-full " />
+        <a className="flex title-font font-medium items-center text-orange-600 mb-4 pt-2 md:mb-0">
           Muzzi
         </a>
         <p className="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
@@ -22,9 +22,9 @@ const Footer = () => {
           >
             <svg
               fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               className="w-5 h-5"
               viewBox="0 0 24 24"
             >
@@ -39,9 +39,9 @@ const Footer = () => {
           >
             <svg
               fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               className="w-5 h-5"
               viewBox="0 0 24 24"
             >
@@ -57,9 +57,9 @@ const Footer = () => {
             <svg
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               className="w-5 h-5"
               viewBox="0 0 24 24"
             >
@@ -76,9 +76,9 @@ const Footer = () => {
             <svg
               fill="currentColor"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="0"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="0"
               className="w-5 h-5"
               viewBox="0 0 24 24"
             >
