@@ -15,15 +15,6 @@ export default function Skill() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold title-font text-white mb-4">
             Skills
           </h1>
-          <p className="text-white text-sm sm:text-base leading-relaxed max-w-2xl mx-auto px-4">
-            I specialize in web development and graphic design, creating
-            responsive, user-friendly solutions using technologies like React,
-            Next.js, and Tailwind CSS. My skills also extend to Data Structures
-            and Algorithms (DSA), Object-Oriented Programming (OOP), DBMS, and
-            assembly language. With experience in tools like Appwrite and Google
-            Sheets automation, I focus on delivering efficient and visually
-            appealing results while staying current with the latest trends.
-          </p>
         </div>
 
         <div className="container px-4 py-8 mx-auto">

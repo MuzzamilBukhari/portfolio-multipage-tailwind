@@ -1,15 +1,16 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "@/public/images/pic.jpg";
 
 const Footer = () => {
   return (
     <footer className="body-font bg-orange-950">
-      <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-        <Image src={Logo} alt="Logo" className="w-8 h-8 rounded-full " />
-        <a className="flex title-font font-medium items-center text-orange-600 mb-4 pt-2 md:mb-0">
-          Muzzi
-        </a>
+      <div className="container px-5 py-8 mx-auto flex items-center justify-center sm:flex-row flex-col">
+        <Link href={"/"} className="flex justify-center items-center gap-2">
+          <Image src={Logo} alt="Logo" className="w-8 h-8 rounded-full " />
+          <span className="title-font font-medium text-orange-600">Muzzi</span>
+        </Link>
         <p className="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
           © 2024 Muzzi
         </p>

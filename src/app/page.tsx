@@ -1,16 +1,14 @@
-import Contact from "@/components/Contact";
-import Education from "@/components/Education";
-import InfoSection from "@/components/InfoSection";
-import Portfolio from "@/components/Portfolio";
-import Skills from "@/components/Skills";
+import Contact from "@/components/contact/Contact";
+import Education from "@/components/about/Education";
+import InfoSection from "@/components/hero-section/InfoSection";
+import Portfolio from "@/components/portfolio/Portfolio";
+import Skills from "@/components/skills/Skills";
 
 export default function Home() {
   return (
     <div className="">
       <InfoSection />
-      <Education />
       <Skills />
-      <Portfolio />
       <Contact />
     </div>
   );

@@ -1,16 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
+import Profile from "@/public/images/pic.jpg";
 
 const InfoSection = () => {
   return (
     <>
-      <section
-        id="info"
-        className="text-white bg-orange-950 body-font pt-[220px] md:pt-28"
-      >
+      <section className="text-white bg-orange-950 body-font pt-[220px] md:pt-28">
         <div className="container mx-auto flex px-5 py-12 lg:py-24 flex-col-reverse lg:flex-row items-center justify-center">
-          <div className="lg:flex-grow lg:w-1/2 flex flex-col lg:items-start lg:text-left mb-12 lg:mb-0 items-center text-center lg:ml-12">
+          <div className="lg:flex-grow lg:w-[40%] flex flex-col lg:items-start lg:text-left mb-12 lg:mb-0 items-center text-center lg:ml-20">
             <h1 className="title-font text-4xl sm:text-5xl lg:text-6xl mb-4 font-bold">
+              Hey, I'm <br className="mt-2" />
               Muzzamil Bukhari
             </h1>
             <h2 className="title-font text-2xl sm:text-3xl lg:text-4xl mb-4 font-medium text-orange-600">
