@@ -6,7 +6,7 @@ const InfoSection = () => {
     <>
       <section
         id="info"
-        className="text-white bg-orange-950 body-font pt-[220px] sm:pt-28"
+        className="text-white bg-orange-950 body-font pt-[220px] md:pt-28"
       >
         <div className="container mx-auto flex px-5 py-12 lg:py-24 flex-col-reverse lg:flex-row items-center justify-center">
           <div className="lg:flex-grow lg:w-1/2 flex flex-col lg:items-start lg:text-left mb-12 lg:mb-0 items-center text-center lg:ml-12">
