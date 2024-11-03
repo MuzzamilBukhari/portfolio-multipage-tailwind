@@ -19,7 +19,7 @@ export default function Portfolio() {
           systems, each project highlights my skills in TypeScript, Next.js, and
           operating systems. Feel free to explore the code on GitHub!
         </p>
-        <div className="flex flex-wrap justify-center items-center gap-10">
+        <div className=" container flex flex-wrap justify-center items-center gap-10">
           <div className="bg-orange-800 w-[300px] h-[300px] p-5 rounded-lg hover:scale-105 hover:shadow-lg transition duration-300">
             <Link
               href="https://qr-code-generator-lake.vercel.app/"
