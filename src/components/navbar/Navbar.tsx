@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
@@ -18,12 +20,12 @@ const Navbar = () => {
     },
     {
       id: 3,
-      name: "Portfolio",
-      slug: "/portfolio",
+      name: "Projects",
+      slug: "/projects",
     },
   ];
   return (
-    <header className="text-orange-500 bg-orange-950 body-font w-full fixed z-10 flex justify-center items-center">
+    <header className="text-primary bg-bg1 body-font w-full fixed z-10 flex justify-center items-center">
       <div className="container flex flex-wrap items-center w-full p-5 flex-col md:flex-row ">
         <Link
           href={"/"}
@@ -39,6 +41,16 @@ const Navbar = () => {
             </NavLink>
           ))}
         </nav>
+        <div className="flex justify-center lg:justify-start">
+          <button
+            // href="https://www.linkedin.com/in/muzzamilbukhari/"
+            onClick={() => console.log(3)}
+            // target="_blank"
+            className="text-secondary text-center font-semibold bg-white py-2 px-3 rounded-xl text-md hover:scale-105 duration-300"
+          >
+            Download Resume
+          </button>
+        </div>
       </div>
     </header>
   );

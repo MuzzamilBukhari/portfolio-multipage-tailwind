@@ -6,14 +6,14 @@ import Profile from "@/public/images/pic.jpg";
 const InfoSection = () => {
   return (
     <>
-      <section className="text-white bg-orange-950 body-font pt-[220px] md:pt-28">
+      <section className="text-white bg-bg1 body-font pt-[220px] md:pt-28">
         <div className="container mx-auto flex px-5 py-12 lg:py-24 flex-col-reverse lg:flex-row items-center justify-center">
           <div className="lg:flex-grow lg:w-[40%] flex flex-col lg:items-start lg:text-left mb-12 lg:mb-0 items-center text-center lg:ml-20">
             <h1 className="title-font text-4xl sm:text-5xl lg:text-6xl mb-4 font-bold">
               Hey, I'm <br className="mt-2" />
               Muzzamil Bukhari
             </h1>
-            <h2 className="title-font text-2xl sm:text-3xl lg:text-4xl mb-4 font-medium text-orange-600">
+            <h2 className="title-font text-2xl sm:text-3xl lg:text-4xl mb-4 font-medium text-primary">
               Aspiring Web Developer
             </h2>
             <p className="mb-8 leading-relaxed w-full max-w-lg">
@@ -26,7 +26,7 @@ const InfoSection = () => {
               <Link
                 href="https://www.linkedin.com/in/muzzamilbukhari/"
                 target="_blank"
-                className="text-orange-600 font-semibold bg-white py-2 px-6 rounded-lg text-lg hover:scale-105 duration-300"
+                className="text-secondary font-semibold bg-white py-2 px-6 rounded-lg text-lg hover:scale-105 duration-300"
               >
                 Hire me
               </Link>

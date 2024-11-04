@@ -1,8 +1,8 @@
-import Education from "@/components/about/Education";
+import AboutComp from "@/components/about/About";
 import React from "react";
 
 const About = () => {
-  return <Education />;
+  return <AboutComp />;
 };
 
 export default About;
