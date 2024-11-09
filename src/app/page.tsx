@@ -33,7 +33,7 @@ export default function Home() {
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold title-font text-white mb-4">
           My <span className="text-primary">Projects</span>
         </h1>
-        <div className="mt-20 flex justify-center items-center gap-16">
+        <div className="mt-20 flex flex-wrap justify-center items-center flex-col md:flex-row gap-16">
           {projects.map((project) => (
             <ProjectCard
               name={project.name}
