@@ -8,7 +8,7 @@ const InfoSection = () => {
         <div className="container mx-auto flex px-5 py-12 lg:py-24 flex-col-reverse lg:flex-row items-center justify-center">
           <div className="lg:flex-grow lg:w-[40%] flex flex-col lg:items-start lg:text-left mb-12 lg:mb-0 items-center text-center lg:ml-20">
             <h1 className="title-font text-4xl sm:text-5xl lg:text-6xl mb-4 font-bold">
-              Hey, I'm <br className="mt-2" />
+              Hey, I&apos;m <br className="mt-2" />
               Muzzamil Bukhari
             </h1>
             <h2 className="title-font text-2xl sm:text-3xl lg:text-4xl mb-4 font-medium text-primary">
