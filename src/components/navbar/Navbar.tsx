@@ -23,9 +23,19 @@ const Navbar = () => {
       name: "Projects",
       slug: "/projects",
     },
+    {
+      id: 4,
+      name: "Services",
+      slug: "/services",
+    },
+    {
+      id: 5,
+      name: "Contact",
+      slug: "/contact",
+    },
   ];
   return (
-    <header className="text-primary bg-bg1 body-font w-full fixed z-10 flex justify-center items-center">
+    <header className="text-primary bg-bg1 body-font w-full fixed z-10 hidden md:flex justify-center items-center">
       <div className="container flex flex-wrap items-center w-full p-5 flex-col md:flex-row ">
         <Link
           href={"/"}
@@ -34,7 +44,7 @@ const Navbar = () => {
           <Image src={Logo} alt={""} className="w-14 h-14 rounded-[50%] " />
           <span>Muzzi</span>
         </Link>
-        <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center md:mr-12">
+        <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center ">
           {navItems.map((item) => (
             <NavLink slug={item.slug} key={item.id}>
               {item.name}
