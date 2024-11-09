@@ -1,8 +1,4 @@
-import Contact from "@/components/contact/Contact";
-import Education from "@/components/about/About";
-import InfoSection from "@/components/hero-section/InfoSection";
-import Portfolio from "@/components/projects/Projects";
-import Skills from "@/components/skills/Skills";
+import { Contact, InfoSection, Skills } from "@/components/";
 
 export default function Home() {
   return (

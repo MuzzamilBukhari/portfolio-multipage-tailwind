@@ -1,7 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
 import React from "react";
-import Profile from "@/public/images/pic.jpg";
 
 const InfoSection = () => {
   return (

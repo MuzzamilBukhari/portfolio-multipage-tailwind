@@ -33,11 +33,11 @@ const navItems = [
   },
 ];
 
-export const MobNavbar = () => {
+const MobNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="text-primary bg-bg1 body-font w-full fixed z-10 md:hidden flex justify-center items-center">
-      <div className="container flex flex-wrap items-center w-full p-5 justify-between ">
+      <div className="container  flex flex-wrap items-center w-full p-5 justify-between ">
         <Link
           href={"/"}
           className="flex md:ml-8 title-font font-medium items-center text-white gap-2 text-xl mb-4 md:mb-0"
@@ -82,3 +82,5 @@ export const MobNavbar = () => {
     </header>
   );
 };
+
+export default MobNavbar;

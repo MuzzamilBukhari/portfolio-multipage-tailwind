@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const ProjectCard = ({
   name,
@@ -19,7 +20,7 @@ const ProjectCard = ({
       className={`bg-orange-800 w-[300px] h-[300px] p-5 rounded-lg hover:scale-105 hover:shadow-lg transition duration-300 ${className}`}
     >
       <Link href={link} target="_blank">
-        <img
+        <Image
           src={image}
           alt={alt}
           className="rounded-t-lg w-full object-cover h-40"
