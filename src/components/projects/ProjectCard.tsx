@@ -17,13 +17,15 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className={`bg-orange-800 w-[300px] h-[300px] p-5 rounded-lg hover:scale-105 hover:shadow-lg transition duration-300 ${className}`}
+      className={`bg-secondary/60 w-[280px] h-[280px] flex justify-start items-center flex-col p-5 rounded-lg hover:scale-105 transition duration-300 ${className}`}
     >
       <Link href={link} target="_blank">
         <Image
           src={image}
           alt={alt}
-          className="rounded-t-lg w-full object-cover h-40"
+          width={40}
+          height={40}
+          className="rounded-t-lg w-full object-cover h-40 border-2 border-primary"
         />
         <h3 className="text-lg font-medium text-white mt-4">{name}</h3>
       </Link>

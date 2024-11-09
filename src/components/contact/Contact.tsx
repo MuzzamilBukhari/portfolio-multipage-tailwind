@@ -6,7 +6,7 @@ const Contact = () => {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
           <h1 className="sm:text-7xl text-6xl font-bold title-font mb-4 ">
-            Contact Us
+            Contact <span className="text-primary">Us</span>
           </h1>
           <p className="lg:w-2/3 mx-auto text-primary leading-relaxed text-base">
             Ham aapke liye hamesha haazir hain lekin Koi kaam ka sawal ho to
@@ -24,7 +24,7 @@ const Contact = () => {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full bg-purple-100 bg-opacity-50 rounded border border-none focus:border-primary focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-purple-50 bg-opacity-50 rounded border border-none focus:border-primary focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
@@ -36,7 +36,7 @@ const Contact = () => {
                 <textarea
                   id="message"
                   name="message"
-                  className="w-full bg-purple-100 bg-opacity-50 rounded border border-none focus:border-primary focus:bg-white focus:ring-2 focus:ring-purple-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-purple-50 bg-opacity-50 rounded border border-none focus:border-primary focus:bg-white focus:ring-2 focus:ring-purple-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                 ></textarea>
               </div>
             </div>

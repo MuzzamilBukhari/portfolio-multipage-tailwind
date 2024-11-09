@@ -23,15 +23,11 @@ const Navbar = () => {
       name: "Projects",
       slug: "/projects",
     },
+
     {
       id: 4,
-      name: "Services",
-      slug: "/services",
-    },
-    {
-      id: 5,
-      name: "Contact",
-      slug: "/contact",
+      name: "Github",
+      slug: "/https://github.com/muzzamilbukhari",
     },
   ];
   return (
@@ -42,7 +38,9 @@ const Navbar = () => {
           className="flex flex-col sm:flex-row md:ml-8 title-font font-medium items-center text-white gap-2 text-xl mb-4 md:mb-0"
         >
           <Image src={Logo} alt={""} className="w-14 h-14 rounded-[50%] " />
-          <span>Muzzi</span>
+          <span>
+            Muzzamil<span className="text-primary">Bukhari</span>
+          </span>
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center ">
           {navItems.map((item) => (

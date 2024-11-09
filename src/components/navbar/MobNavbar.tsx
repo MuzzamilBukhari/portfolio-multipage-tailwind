@@ -21,15 +21,11 @@ const navItems = [
     name: "Projects",
     slug: "/projects",
   },
+
   {
     id: 4,
-    name: "Services",
-    slug: "/services",
-  },
-  {
-    id: 5,
-    name: "Contact",
-    slug: "/contact",
+    name: "Github",
+    slug: "/https://github.com/muzzamilbukhari",
   },
 ];
 
@@ -43,7 +39,9 @@ const MobNavbar = () => {
           className="flex md:ml-8 title-font font-medium items-center text-white gap-2 text-xl mb-4 md:mb-0"
         >
           <Image src={Logo} alt={""} className="w-14 h-14 rounded-[50%] " />
-          <span>Muzzi</span>
+          <span>
+            Muzzamil<span className="text-primary">Bukhari</span>
+          </span>
         </Link>
 
         <button

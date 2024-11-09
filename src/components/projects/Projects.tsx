@@ -54,13 +54,11 @@ export default function Projects() {
           Check out my latest projects
         </h2>
         <p className="mb-8 text-white px-4">
-          These are some of the projects I&apos;ve been working on, showcasing
-          my expertise in web development, React, and Data Structures &
-          Algorithms (DSA). From building functional calculators to complex quiz
-          systems, each project highlights my skills in TypeScript, Next.js, and
-          operating systems. Feel free to explore the code on GitHub!
+          From building functional calculators to complex quiz systems, each
+          project highlights my skills in TypeScript, Next.js, and operating
+          systems. Feel free to explore the code on GitHub!
         </p>
-        <div className=" container flex flex-wrap justify-center items-center gap-10">
+        <div className="container flex flex-wrap justify-center mx-auto items-center gap-8 mt-20">
           {projects.map((project) => (
             <ProjectCard
               name={`Project ${project.id} - ${project.name}`}

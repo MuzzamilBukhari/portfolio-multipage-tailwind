@@ -7,7 +7,7 @@ import { TbBrandCpp } from "react-icons/tb";
 import { CgVercel } from "react-icons/cg";
 import SkillCard from "./SkillCard";
 
-export default function Skill() {
+export default function Skills() {
   const languages = [
     {
       id: 1,
@@ -64,12 +64,12 @@ export default function Skill() {
       <section>
         <div className="text-center mb-12 pt-12">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold title-font text-white mb-4">
-            Skills
+            My <span className="text-primary">Skills</span>
           </h1>
         </div>
 
         <div className="container px-4 py-8 mx-auto">
-          <div className="flex gap-3 justify-center items-center flex-wrap text-2xl">
+          <div className="flex gap-5 justify-center items-center flex-wrap text-2xl">
             {languages.map((language) => (
               <SkillCard
                 skill={language.name}
