@@ -25,7 +25,7 @@ const navItems = [
   {
     id: 4,
     name: "Github",
-    slug: "/https://github.com/muzzamilbukhari",
+    slug: "https://github.com/huzaifanaeem1",
   },
 ];
 
@@ -76,6 +76,13 @@ const MobNavbar = () => {
             </NavLink>
           ))}
         </nav>
+        <a
+          href="/resume.pdf"
+          download
+          className="font-semibold mr-2 hover:shadow-md hover:bg-secondary rounded-xl hover:text-white px-2 lg:px-5 py-2 duration-200 hover:ring-primary shadow-lg hover:shadow-secondary/60"
+        >
+          <button className="">Download Resume</button>
+        </a>
       </div>
     </header>
   );
