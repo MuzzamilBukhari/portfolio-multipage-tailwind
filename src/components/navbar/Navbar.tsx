@@ -51,7 +51,7 @@ const Navbar = () => {
         </nav>
         <div className="flex justify-center lg:justify-start">
           <a
-            href="../../public/resume.pdf"
+            href="/resume.pdf"
             download
             className="text-secondary text-center font-semibold bg-white py-2 px-3 rounded-xl text-md hover:scale-105 duration-300"
           >
