@@ -6,42 +6,37 @@ export default function Projects() {
     {
       id: 1,
       name: "QR Code Generator",
-      imageSrc:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/800px-QR_code_for_mobile_English_Wikipedia.svg.png",
+      imageSrc: "/images/",
       link: "https://qr-code-generator-lake.vercel.app/",
     },
     {
       id: 2,
       name: "Age Calculator",
-      imageSrc:
-        "https://jharkhand.studyinfo.org.in/wp-content/uploads/2024/05/age-calculator-76.png",
+      imageSrc: "/images/agecal.jpg",
       link: "https://age-calculator-green-sigma.vercel.app/",
     },
     {
       id: 3,
       name: "Book Store Website",
-      imageSrc:
-        "https://s26162.pcdn.co/wp-content/uploads/sites/3/2023/02/used-books.jpg",
+      imageSrc: "/images/bookstore.jpg",
       link: "https://bookstore-mb-nu.vercel.app/",
     },
     {
       id: 4,
       name: "Blogger Website",
-      imageSrc:
-        "https://img.freepik.com/free-photo/online-blog_53876-123696.jpg",
+      imageSrc: "/images/blog.jpg",
       link: "https://blogger-web.vercel.app/",
     },
     {
       id: 5,
       name: "Process Control Block",
-      imageSrc:
-        "https://afteracademy.com/images/process-control-block-in-operating-system-banner.png",
+      imageSrc: "/images/pcb.png",
       link: "https://github.com/MuzzamilBukhari/process-control-block.git",
     },
     {
       id: 6,
       name: "Social Network Graph",
-      imageSrc: "https://miro.medium.com/v2/resize:fit:1400/0*KIKnUvzdIkp5zcDJ",
+      imageSrc: "/images/networkgraph.jpg",
       link: "https://github.com/MuzzamilBukhari/DSA-Project.git",
     },
   ];

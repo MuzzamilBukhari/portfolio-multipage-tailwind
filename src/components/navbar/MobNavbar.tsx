@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import NavLink from "./NavLink";
-import Logo from "@/public/images/pic.jpg";
+import Logo from "../../../public/images/pic.jpg";
 import Image from "next/image";
 
 const navItems = [

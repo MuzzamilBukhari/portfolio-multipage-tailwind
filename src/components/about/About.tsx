@@ -1,13 +1,13 @@
 import React from "react";
 import { IoIosSchool } from "react-icons/io";
 import { FaUniversity, FaSchool } from "react-icons/fa";
-import profile from "@/public/images/pic.jpg";
+import profile from "../../../public/images/pic.jpg";
 import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="text-white bg-bg1 opacity-[0.99] body-font pt-12 sm:pt-24">
-      <div className="flex justify-center flex-col container px-5 py-12 sm:py-24">
+    <section className="text-white bg-bg1 opacity-[0.99] border border-red-600 body-font pt-12 sm:pt-24">
+      <div className=" container mx-auto px-5 py-12 sm:py-24">
         <div className="flex justify-center items-center gap-12 flex-col mt-20 md:mt-0 md:flex-row">
           <div className="w-[300px] rounded-xl">
             {/* Image */}

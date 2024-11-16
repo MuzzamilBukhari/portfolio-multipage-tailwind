@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import Logo from "@/public/images/pic.jpg";
+import Logo from "../../../public/images/pic.jpg";
 import NavLink from "./NavLink";
 
 const Navbar = () => {

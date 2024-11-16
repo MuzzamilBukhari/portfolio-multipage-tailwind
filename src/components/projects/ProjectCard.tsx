@@ -25,7 +25,7 @@ const ProjectCard = ({
           alt={alt}
           width={40}
           height={40}
-          className="rounded-t-lg w-full object-cover h-40 border-2 border-primary"
+          className="rounded-t-lg w-full object-contain h-40 border-2 border-primary"
         />
         <h3 className="text-lg font-medium text-white mt-4">{name}</h3>
       </Link>
