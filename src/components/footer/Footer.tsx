@@ -33,7 +33,7 @@ const Footer = () => {
             </svg>
           </a>
           <a
-            href="https://www.twitter.com/"
+            href="https://www.x.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-3 text-blue-600"
