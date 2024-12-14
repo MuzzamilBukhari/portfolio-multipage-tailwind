@@ -3,8 +3,15 @@ import { IoIosSchool } from "react-icons/io";
 import { FaUniversity, FaSchool } from "react-icons/fa";
 import profile from "../../../public/images/pic.jpg";
 import Image from "next/image";
+import EducationCard from "./EducationCard";
 
 const About = () => {
+  const education = [
+    // {
+    //   id: 1,
+    //   name:
+    // }
+  ];
   return (
     <section className="text-white bg-bg1 opacity-[0.99] border border-red-600 body-font pt-12 sm:pt-24">
       <div className=" container mx-auto px-5 py-12 sm:py-24">
@@ -44,24 +51,7 @@ const About = () => {
 
           <div className="flex flex-wrap m-4 pt-8">
             {/* Card 1 - Jinnah Govt College */}
-            <div className="p-4 w-full md:w-1/2 lg:w-1/3">
-              <div className="flex rounded-lg h-full bg-secondary hover:scale-105 duration-300 p-6 sm:p-8 flex-col">
-                <div className="flex items-center mb-3">
-                  <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-primary text-white">
-                    <IoIosSchool />
-                  </div>
-                  <h2 className="text-white text-lg sm:text-xl font-semibold">
-                    Jinnah Govt College
-                  </h2>
-                </div>
-                <div className="flex-grow">
-                  <p className="leading-relaxed text-sm sm:text-base">
-                    Passed out from Jinnah Govt College in 2021 with an 89%
-                    aggregate.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <EducationCard />
 
             {/* Card 2 - University of Karachi */}
             <div className="p-4 w-full md:w-1/2 lg:w-1/3">
