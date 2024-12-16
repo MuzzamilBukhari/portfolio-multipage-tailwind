@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import TestimonialCard from "./TestimonialCard";
 import Slider from "react-slick";
 

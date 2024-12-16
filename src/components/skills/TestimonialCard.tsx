@@ -1,3 +1,4 @@
+import Image from "next/image";
 const TestimonialCard = ({
   testimonial,
 }: {
@@ -11,7 +12,7 @@ const TestimonialCard = ({
     >
       <div className="flex justify-center flex-col gap-2">
         <div>
-          <img
+          <Image
             src={testimonial.image}
             alt="img"
             className="rounded-full w-20 h-20"

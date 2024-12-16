@@ -5,8 +5,6 @@ import { SiTypescript } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
 import { TbBrandCpp } from "react-icons/tb";
 import { CgVercel } from "react-icons/cg";
-import SkillCard from "./SkillCard";
-import TestimonialCard from "./TestimonialCard";
 import Slider from "react-slick";
 
 export default function Skills() {
@@ -48,18 +46,18 @@ export default function Skills() {
     },
   ];
 
-  const platform = [
-    {
-      id: 1,
-      name: "Github",
-      icon: FaGithub,
-    },
-    {
-      id: 2,
-      name: "Vercel",
-      icon: CgVercel,
-    },
-  ];
+  // const platform = [
+  //   {
+  //     id: 1,
+  //     name: "Github",
+  //     icon: FaGithub,
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Vercel",
+  //     icon: CgVercel,
+  //   },
+  // ];
 
   const settings = {
     dots: true,
