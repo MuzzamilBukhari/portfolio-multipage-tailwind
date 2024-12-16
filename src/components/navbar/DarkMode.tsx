@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const DarkMode = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme"));
@@ -19,7 +20,7 @@ const DarkMode = () => {
 
   return (
     <div className="relative">
-      <img
+      <Image
         src={
           theme == "dark"
             ? "/images/dark-mode-button.png"

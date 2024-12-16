@@ -1,10 +1,9 @@
 "use client";
 import React from "react";
-import { FaHtml5, FaJava, FaPython, FaCss3Alt, FaGithub } from "react-icons/fa";
+import { FaHtml5, FaJava, FaPython, FaCss3Alt } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
 import { TbBrandCpp } from "react-icons/tb";
-import { CgVercel } from "react-icons/cg";
 import Slider from "react-slick";
 
 export default function Skills() {
