@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import Logo from "../../../public/images/pic.jpg";
 import Image from "next/image";
+import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { Button } from "..";
 
 const navItems = [
   {
@@ -31,59 +33,57 @@ const navItems = [
 
 const MobNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <header className="text-primary bg-bg1 body-font w-full fixed z-10 md:hidden flex justify-center items-center">
-      <div className="container  flex flex-wrap items-center w-full p-5 justify-between ">
+    <header className="text-primary body-font bg-bg1 backdrop-blur-md flex flex-col md:hidden w-full fixed top-0 left-0 z-10">
+      <div className="container mx-auto flex justify-between items-center p-5">
         <Link
           href={"/"}
-          className="flex md:ml-8 title-font font-medium items-center text-white gap-2 text-xl mb-4 md:mb-0"
+          className="flex title-font font-medium items-center text-white gap-2 text-xl"
         >
-          <Image src={Logo} alt={""} className="w-14 h-14 rounded-[50%] " />
+          <div className="border-2 border-primary rounded-[50%]">
+            <Image
+              src={Logo}
+              alt={""}
+              className="w-12 h-12 rounded-[50%] object-cover object-top "
+            />
+          </div>
           <span>
             Muzzamil<span className="text-primary">Bukhari</span>
           </span>
         </Link>
-
-        <button
-          className="text-white block focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </button>
       </div>
-      <div className="">
-        <nav
-          className={`${
-            isOpen ? "flex" : "hidden"
-          }  flex-col items-center gap-2 text-base justify-center absolute top-20 -right-4 bg-black rounded-md p-4`}
-        >
+      <button
+        className="text-secondary focus:outline-none absolute top-7 right-5 z-20"
+        onClick={toggleNavbar}
+      >
+        {isOpen ? (
+          <RiCloseLine className="w-7 h-7" />
+        ) : (
+          <RiMenu3Line className="w-7 h-7" />
+        )}
+      </button>
+
+      <nav
+        className={`fixed top-0 right-0 bg-black/95 backdrop-blur-md p-6 w-3/4 h-screen transform duration-300 ease-in-out z-10 ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex flex-col items-center gap-6 justify-center h-full">
           {navItems.map((item) => (
             <NavLink slug={item.slug} key={item.id}>
               {item.name}
             </NavLink>
           ))}
-          <a
-            href="/resume.pdf"
-            download
-            className="font-semibold mr-2 hover:shadow-md hover:bg-secondary rounded-xl hover:text-white px-2 lg:px-5 py-2 duration-200 hover:ring-primary shadow-lg hover:shadow-secondary/60"
-          >
-            <button className="">Download Resume</button>
+          <a href="/resume.pdf" download>
+            <Button type="button">Download Resume</Button>
           </a>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
   );
 };

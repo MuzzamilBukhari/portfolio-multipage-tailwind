@@ -4,7 +4,7 @@ const Input = ({
   label,
   type,
   placeholder,
-  htmlFor,
+  name,
   className,
   value,
   onchange,
@@ -12,23 +12,23 @@ const Input = ({
   label: string;
   type: string;
   placeholder: string;
-  htmlFor: string;
+  name: string;
   className?: string;
   value: string;
   onchange: (e: { target: { name: any; value: any } }) => void;
 }) => {
   return (
     <>
-      <label htmlFor={htmlFor} className="leading-7 text-sm ">
+      <label htmlFor={name} className="leading-7 text-sm">
         {label}
       </label>
       <input
         type={type}
-        name={htmlFor}
-        placeholder={placeholder}
+        name={name}
         value={value}
         onChange={onchange}
-        className={`w-full bg-purple-50 bg-opacity-50 rounded border border-none focus:border-primary focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out ${className}`}
+        placeholder={placeholder}
+        className={`w-full bg-primary bg-opacity-10 rounded border border-primary/60 focus:border-primary focus:bg-transparent focus:ring-2 focus:ring-primary/40 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out ${className}`}
       />
     </>
   );

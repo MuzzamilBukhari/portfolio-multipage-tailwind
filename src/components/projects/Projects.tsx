@@ -43,19 +43,59 @@ export default function Projects() {
 
   return (
     <section className="bg-bg1 opacity-[0.98] pt-[220px] pb-32 body-font">
-      <div className="container mx-auto text-center">
-        <h1 className="sm:text-7xl text-6xl text-white font-bold">Portfolio</h1>
-        <h2 className="text-lg font-normal text-primary mb-5">
+      <div className="flex justify-center items-center flex-col text-center">
+        <h2 className="text-lg font-normal text-primary">
           Check out my latest projects
         </h2>
-        <p className="mb-8 text-white px-4">
+        <h1 className="sm:text-7xl text-6xl text-white font-bold">Portfolio</h1>
+        <p className="mb-8 text-white px-8 mt-2 max-w-[600px]">
           From building functional calculators to complex quiz systems, each
-          project highlights my skills in TypeScript, Next.js, and operating
-          systems. Feel free to explore the code on GitHub!
+          project highlights my skills.
         </p>
-        <div className="container flex flex-wrap justify-center mx-auto items-center gap-8 mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 px-12 justify-center gap-8 items-center mt-20 ">
+          <ProjectCard
+            title={"Online Bookstore Website"}
+            description={
+              "A responsive online bookstore showcasing sleek UI design, built using React and Tailwind CSS."
+            }
+            features={[
+              "Developed a mobile-first design using modern CSS techniques.",
+              "Implemented a custom hamburger menu for seamless navigation.",
+              "Showcased testimonials with a smooth slider using React Slick.",
+            ]}
+            techStack={["React", "Tailwind CSS", "Next.js", "Appwrite"]}
+            link={"https://bookstore-mb-nu.vercel.app/"}
+          />
+          <ProjectCard
+            title={"Online Bookstore Website"}
+            description={
+              "A responsive online bookstore showcasing sleek UI design, built using React and Tailwind CSS."
+            }
+            features={[
+              "Developed a mobile-first design using modern CSS techniques.",
+              "Implemented a custom hamburger menu for seamless navigation.",
+              "Showcased testimonials with a smooth slider using React Slick.",
+            ]}
+            techStack={["React", "Tailwind CSS", "Next.js", "Appwrite"]}
+            link={"https://bookstore-mb-nu.vercel.app/"}
+          />
+          <ProjectCard
+            title={"Online Bookstore Website"}
+            description={
+              "A responsive online bookstore showcasing sleek UI design, built using React and Tailwind CSS."
+            }
+            features={[
+              "Developed a mobile-first design using modern CSS techniques.",
+              "Implemented a custom hamburger menu for seamless navigation.",
+              "Showcased testimonials with a smooth slider using React Slick.",
+            ]}
+            techStack={["React", "Tailwind CSS", "Next.js", "Appwrite"]}
+            link={"https://bookstore-mb-nu.vercel.app/"}
+          />
+        </div>
+        {/* <div className="container flex flex-wrap justify-center mx-auto items-center gap-8 mt-20">
           {projects.map((project) => (
-            <ProjectCard
+            <ProjectCard2
               name={`Project ${project.id} - ${project.name}`}
               image={project.imageSrc}
               alt={`Project ${project.id}`}
@@ -63,7 +103,7 @@ export default function Projects() {
               key={project.id}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

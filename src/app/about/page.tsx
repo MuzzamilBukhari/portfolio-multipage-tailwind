@@ -1,6 +1,5 @@
-import { About as AboutComp } from "@/components/";
 import React from "react";
-
+import { About as AboutComp } from "@/components";
 const About = () => {
   return (
     <div>

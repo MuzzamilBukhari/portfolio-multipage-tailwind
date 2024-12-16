@@ -1,5 +1,5 @@
-import { Contact, InfoSection, Skills } from "@/components/";
-import ProjectCard from "@/components/projects/ProjectCard";
+import { Button, Contact, InfoSection, Skills } from "@/components/";
+import { ProjectCard } from "@/components/";
 import Link from "next/link";
 
 export default function Home() {
@@ -18,40 +18,38 @@ export default function Home() {
         "https://jharkhand.studyinfo.org.in/wp-content/uploads/2024/05/age-calculator-76.png",
       link: "https://age-calculator-green-sigma.vercel.app/",
     },
-    {
-      id: 3,
-      name: "Book Store Website",
-      imageSrc:
-        "https://s26162.pcdn.co/wp-content/uploads/sites/3/2023/02/used-books.jpg",
-      link: "https://bookstore-mb-nu.vercel.app/",
-    },
   ];
   return (
-    <div className="bg-black">
+    <div className="bg-bg1">
       <InfoSection />
-      <div className="mt-12 flex flex-col justify-center items-center ">
+      <div className="mt-12 flex flex-col justify-center items-center pb-12 ">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold title-font text-white mb-4">
-          My <span className="text-primary">Projects</span>
+          My <span className="text-primary underline">Projects</span>
         </h1>
-        <div className="mt-20 flex flex-wrap justify-center items-center flex-col md:flex-row gap-16">
-          {projects.map((project) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 px-8 sm:px-12 lg:px-16 mt-20 justify-center items-center gap-8">
+          {projects.map((project, i) => (
             <ProjectCard
-              name={project.name}
-              image={project.imageSrc}
-              link={project.link}
-              alt={"project"}
-              key={project.id}
+              key={i}
+              title={"Online Bookstore Website"}
+              description={
+                "A responsive online bookstore showcasing sleek UI design, built using React and Tailwind CSS."
+              }
+              features={[
+                "Developed a mobile-first design using modern CSS techniques.",
+                "Implemented a custom hamburger menu for seamless navigation.",
+                "Showcased testimonials with a smooth slider using React Slick.",
+              ]}
+              techStack={["React", "Tailwind CSS", "Next.js", "Appwrite"]}
+              link={"https://bookstore-mb-nu.vercel.app/"}
             />
           ))}
         </div>
-        <div className="flex justify-center mt-20">
-          <Link
-            href="/projects"
-            className="text-white font-semibold text-2xl animate-pulse transform hover:scale-110 transition-all duration-300 hover:bg-primary py-3 px-6 rounded-full border-2 border-primary"
-          >
-            See More Projects
-          </Link>
-        </div>
+        <Button
+          type="button"
+          className="mt-12 md:mt-20 px-7 hover:border-bg1 py-3"
+        >
+          <Link href="/projects">See More Projects</Link>
+        </Button>
       </div>
       <Skills />
       <Contact />

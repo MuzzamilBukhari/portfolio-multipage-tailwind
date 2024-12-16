@@ -7,6 +7,8 @@ import MobNavbar from "./navbar/MobNavbar";
 import Projects from "./projects/Projects";
 import Skills from "./skills/Skills";
 import Input from "./Input";
+import Button from "./Button";
+import ProjectCard from "./projects/ProjectCard";
 
 export {
   About,
@@ -18,4 +20,6 @@ export {
   Projects,
   Skills,
   Input,
+  Button,
+  ProjectCard,
 };

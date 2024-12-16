@@ -1,10 +1,10 @@
-import Link from "next/link";
 import React from "react";
+import Button from "../Button";
 
 const InfoSection = () => {
   return (
     <>
-      <section className="text-white bg-bg1 body-font pt-[220px] md:pt-28">
+      <section className="text-white bg-bg1 body-font pt-[200px] md:pt-24">
         <div className="container mx-auto flex px-5 py-12 lg:py-24 flex-col-reverse lg:flex-row items-center justify-center">
           <div className="lg:flex-grow lg:w-[40%] flex flex-col lg:items-start lg:text-left mb-12 lg:mb-0 items-center text-center lg:ml-20">
             <h1 className="title-font text-4xl sm:text-5xl lg:text-6xl mb-4 font-bold">
@@ -20,15 +20,7 @@ const InfoSection = () => {
               enjoy learning new tools and applying them to create dynamic,
               user-friendly websites.
             </p>
-            <div className="flex justify-center lg:justify-start">
-              <Link
-                href="https://www.linkedin.com/in/muzzamilbukhari/"
-                target="_blank"
-                className="text-secondary font-semibold bg-white py-2 px-6 rounded-lg text-lg hover:scale-105 duration-300"
-              >
-                Hire me
-              </Link>
-            </div>
+            <Button type="button">Hire me</Button>
           </div>
         </div>
       </section>
