@@ -20,7 +20,7 @@ export default function Home() {
     },
   ];
   return (
-    <div className="bg-bg1">
+    <>
       <InfoSection />
       <div className="mt-12 flex flex-col justify-center items-center pb-12 ">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold title-font text-white mb-4">
@@ -53,6 +53,6 @@ export default function Home() {
       </div>
       <Skills />
       <Contact />
-    </div>
+    </>
   );
 }

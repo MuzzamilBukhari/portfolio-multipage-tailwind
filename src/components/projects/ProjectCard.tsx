@@ -39,14 +39,25 @@ const ProjectCard = ({
           ))}
         </ul>
         <h3 className="text-xl font-semibold text-primary mt-4">Tech Stack:</h3>
-        <p className="text-myGry mt-2">{techStack.join(", ")}</p>
-        {link && (
-          <Button type="button" className="mt-3">
-            <a href={link} target="_blank" rel="noopener noreferrer">
-              View Project
-            </a>
-          </Button>
-        )}
+        <div className="flex justify-center items-center gap-2 mt-2">
+          {techStack.map((skill, i) => (
+            <div
+              key={i}
+              className="border-2 border-primary rounded-xl px-2 py-1 "
+            >
+              {skill}
+            </div>
+          ))}
+        </div>
+        <div className="flex justify-center items-center w-full mt-8">
+          {link && (
+            <Button type="button">
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                View Project
+              </a>
+            </Button>
+          )}
+        </div>
       </div>
     </div>
   );

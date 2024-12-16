@@ -1,10 +1,19 @@
 import React from "react";
 import Button from "../Button";
+import bgImg from "../../../public/images/hero.webp";
 
 const InfoSection = () => {
   return (
     <>
-      <section className="text-white bg-bg1 body-font pt-[200px] md:pt-24">
+      <section className="relative bg-cover bg-center h-screen bg-bg1 text-white body-font pt-[200px] md:pt-24">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${bgImg})`,
+            opacity: 0.25,
+            zIndex: -1,
+          }}
+        />
         <div className="container mx-auto flex px-5 py-12 lg:py-24 flex-col-reverse lg:flex-row items-center justify-center">
           <div className="lg:flex-grow lg:w-[40%] flex flex-col lg:items-start lg:text-left mb-12 lg:mb-0 items-center text-center lg:ml-20">
             <h1 className="title-font text-4xl sm:text-5xl lg:text-6xl mb-4 font-bold">

@@ -1,63 +1,29 @@
-"use client";
-import React from "react";
-import { FaHtml5, FaJava, FaPython, FaCss3Alt, FaGithub } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
-import { DiJavascript } from "react-icons/di";
-import { TbBrandCpp } from "react-icons/tb";
-import { CgVercel } from "react-icons/cg";
-import SkillCard from "./SkillCard";
+import { useEffect, useState } from "react";
 import TestimonialCard from "./TestimonialCard";
 import Slider from "react-slick";
 
-export default function Skills() {
-  const languages = [
+const TestimonialsBanner = () => {
+  const testimonialsData = [
     {
       id: 1,
-      name: "HTML",
-      icon: FaHtml5,
+      name: "Ali Raza",
+      text:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos accusantium iure aperiam dolorem nostrum harum velit ipsa! Id accusantium ea eos dicta labore!",
+      image: "https://picsum.photos/101/101",
     },
     {
       id: 2,
-      name: "CSS",
-      icon: FaCss3Alt,
+      name: "Umer Kamal",
+      text:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos accusantium iure aperiam dolorem nostrum harum velit ipsa! Id accusantium ea eos dicta labore!",
+      image: "https://picsum.photos/102/102",
     },
     {
       id: 3,
-      name: "Javascript",
-      icon: DiJavascript,
-    },
-    {
-      id: 4,
-      name: "Typescript",
-      icon: SiTypescript,
-    },
-    {
-      id: 5,
-      name: "Python",
-      icon: FaPython,
-    },
-    {
-      id: 6,
-      name: "Java",
-      icon: FaJava,
-    },
-    {
-      id: 7,
-      name: "C++",
-      icon: TbBrandCpp,
-    },
-  ];
-
-  const platform = [
-    {
-      id: 1,
-      name: "Github",
-      icon: FaGithub,
-    },
-    {
-      id: 2,
-      name: "Vercel",
-      icon: CgVercel,
+      name: "Usman Qadir",
+      text:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos accusantium iure aperiam dolorem nostrum harum velit ipsa! Id accusantium ea eos dicta labore!",
+      image: "https://picsum.photos/103/103",
     },
   ];
 
@@ -100,16 +66,17 @@ export default function Skills() {
   };
   return (
     <section className="flex justify-center items-center flex-col gap-16 px-6 py-10 sm:px-12 bg-white text-black dark:bg-gray-900 dark:text-white ">
-      <div className="block mx-auto">
-        <h1>Hello</h1>
-      </div>
       <div className="w-full p-4">
         <Slider {...settings}>
-          {languages?.map((testimonial) => (
-            <div key={testimonial.id}></div>
+          {testimonialsData?.map((testimonial) => (
+            <div key={testimonial.id}>
+              <TestimonialCard testimonial={testimonial} />
+            </div>
           ))}
         </Slider>
       </div>
     </section>
   );
-}
+};
+
+export default TestimonialsBanner;

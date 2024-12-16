@@ -6,6 +6,7 @@ import Image from "next/image";
 import NavLink from "./NavLink";
 import Logo from "../../../public/images/pic.jpg";
 import { Button } from "../";
+import DarkMode from "./DarkMode";
 
 const Navbar = () => {
   const navItems = [
@@ -33,7 +34,7 @@ const Navbar = () => {
   ];
   return (
     <header className="text-white bg-bg1 body-font w-full fixed z-10 hidden md:block">
-      <div className="flex justify-between items-center md:px-6 lg:px-12 py-4">
+      <div className="flex justify-between items-center md:px-3 lg:px-12 py-4">
         <Link
           href={"/"}
           className="flex title-font font-medium items-center text-white gap-2 text-xl"
@@ -42,15 +43,16 @@ const Navbar = () => {
             <Image
               src={Logo}
               alt={""}
-              className="w-12 h-12 rounded-[50%] object-cover object-top "
+              className="w-9 h-9 rounded-[50%] object-cover object-top "
             />
           </div>
           <span>
             Muzzamil<span className="text-primary">Bukhari</span>
           </span>
         </Link>
-        <div className="flex justify-center items-center gap-6 lg:gap-12">
-          <nav className=" flex items-center gap-8 text-base justify-center ">
+        <div className="flex justify-center items-center gap-2 lg:gap-12">
+          <DarkMode />
+          <nav className=" flex items-center gap-3 lg:gap-8 text-base justify-center ">
             {navItems.map((item) => (
               <NavLink slug={item.slug} key={item.id}>
                 {item.name}
@@ -58,7 +60,7 @@ const Navbar = () => {
             ))}
           </nav>
           <a href="/resume.pdf" download>
-            <Button type="button">Resume</Button>
+            <Button type="button">Download Resume</Button>
           </a>
         </div>
       </div>
