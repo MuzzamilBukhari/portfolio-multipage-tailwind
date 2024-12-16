@@ -15,7 +15,7 @@ const Input = ({
   name: string;
   className?: string;
   value: string;
-  onchange: (e: { target: { name: any; value: any } }) => void;
+  onchange: (e: { target: { name: string; value: string } }) => void;
 }) => {
   return (
     <>

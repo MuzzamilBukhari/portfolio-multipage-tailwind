@@ -1,8 +1,6 @@
 import React from "react";
-import { FaUniversity, FaSchool } from "react-icons/fa";
 import profile from "../../../public/images/pic.jpg";
 import Image from "next/image";
-import EducationCard from "./EducationCard";
 import EducationSection from "./EducationSection";
 
 const About = () => {

@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { FaUniversity, FaSchool } from "react-icons/fa";
-import Image from "next/image";
+import { FaUniversity } from "react-icons/fa";
 import Button from "../Button";
 
 const EducationCard = ({

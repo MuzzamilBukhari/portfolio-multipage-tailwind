@@ -2,44 +2,44 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
-  const projects = [
-    {
-      id: 1,
-      name: "QR Code Generator",
-      imageSrc: "/images/",
-      link: "https://qr-code-generator-lake.vercel.app/",
-    },
-    {
-      id: 2,
-      name: "Age Calculator",
-      imageSrc: "/images/agecal.jpg",
-      link: "https://age-calculator-green-sigma.vercel.app/",
-    },
-    {
-      id: 3,
-      name: "Book Store Website",
-      imageSrc: "/images/bookstore.jpg",
-      link: "https://bookstore-mb-nu.vercel.app/",
-    },
-    {
-      id: 4,
-      name: "Blogger Website",
-      imageSrc: "/images/blog.jpg",
-      link: "https://blogger-web.vercel.app/",
-    },
-    {
-      id: 5,
-      name: "Process Control Block",
-      imageSrc: "/images/pcb.png",
-      link: "https://github.com/MuzzamilBukhari/process-control-block.git",
-    },
-    {
-      id: 6,
-      name: "Social Network Graph",
-      imageSrc: "/images/networkgraph.jpg",
-      link: "https://github.com/MuzzamilBukhari/DSA-Project.git",
-    },
-  ];
+  // const projects = [
+  //   {
+  //     id: 1,
+  //     name: "QR Code Generator",
+  //     imageSrc: "/images/",
+  //     link: "https://qr-code-generator-lake.vercel.app/",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Age Calculator",
+  //     imageSrc: "/images/agecal.jpg",
+  //     link: "https://age-calculator-green-sigma.vercel.app/",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Book Store Website",
+  //     imageSrc: "/images/bookstore.jpg",
+  //     link: "https://bookstore-mb-nu.vercel.app/",
+  //   },
+  //   {
+  //     id: 4,
+  //     name: "Blogger Website",
+  //     imageSrc: "/images/blog.jpg",
+  //     link: "https://blogger-web.vercel.app/",
+  //   },
+  //   {
+  //     id: 5,
+  //     name: "Process Control Block",
+  //     imageSrc: "/images/pcb.png",
+  //     link: "https://github.com/MuzzamilBukhari/process-control-block.git",
+  //   },
+  //   {
+  //     id: 6,
+  //     name: "Social Network Graph",
+  //     imageSrc: "/images/networkgraph.jpg",
+  //     link: "https://github.com/MuzzamilBukhari/DSA-Project.git",
+  //   },
+  // ];
 
   return (
     <section className="bg-bg1 opacity-[0.98] pt-[220px] pb-32 body-font">
