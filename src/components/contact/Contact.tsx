@@ -11,7 +11,7 @@ const Contact = () => {
   });
   const [message, setMessage] = useState("");
 
-  const handleChange = (e: { target: { name: any; value: string } }) => {
+  const handleChange = (e: { target: { name: string; value: string } }) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
