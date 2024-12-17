@@ -6,7 +6,6 @@ import Logo from "../../../public/images/pic.jpg";
 import Image from "next/image";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { Button } from "..";
-import DarkMode from "./DarkMode";
 
 const navItems = [
   {
@@ -58,7 +57,7 @@ const MobNavbar = () => {
           </span>
         </Link>
       </div>
-      <DarkMode />
+
       <button
         className="text-secondary focus:outline-none absolute top-7 right-5 z-20"
         onClick={toggleNavbar}
