@@ -51,7 +51,7 @@ export default function Home() {
           <Link href="/projects">See More Projects</Link>
         </Button>
       </div>
-      <Skills />
+      <div>{/* <Testimonials /> */}</div>
       <Contact />
     </>
   );

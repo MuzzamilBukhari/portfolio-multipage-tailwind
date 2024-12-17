@@ -33,7 +33,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <header className="text-white bg-bg1 body-font w-full fixed z-10 hidden md:block">
+    <header className="bg-white text-bg1 dark:text-white dark:bg-bg1 body-font w-full fixed z-10 hidden md:block">
       <div className="flex justify-between items-center md:px-3 lg:px-12 py-4">
         <Link
           href={"/"}
