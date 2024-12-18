@@ -31,13 +31,16 @@ const Contact = () => {
   };
 
   return (
-    <section className="text-white bg-bg1 opacity-[0.99] body-font relative">
+    <section className="text-dark_bg2 dark:text-light_bg1 bg-light_bg1 dark:bg-dark_bg1 opacity-[0.99] body-font relative">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
           <h1 className="sm:text-7xl text-6xl font-bold title-font mb-1 ">
-            Contact <span className="text-primary">Us</span>
+            Contact{" "}
+            <span className="text-light_primary dark:text-dark_primary">
+              Us
+            </span>
           </h1>
-          <p className="lg:w-2/3 mx-auto text-primary leading-relaxed text-base">
+          <p className="lg:w-2/3 mx-auto text-light_primary dark:text-dark_primary leading-relaxed text-base">
             Please fill this form if you have any queries or a message.
           </p>
         </div>
@@ -76,7 +79,7 @@ const Contact = () => {
                   placeholder="Enter your message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full bg-primary bg-opacity-10 rounded border border-primary/60 focus:border-primary focus:bg-transparent focus:ring-2 focus:ring-primary/40 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-light_primary dark:bg-dark_primary bg-opacity-10 dark:bg-opacity-10 rounded border border-light_primary/60 hover:border-dark_primary/60 focus:border-light_primary dark:focus:border-dark_primary focus:bg-transparent focus:ring-2 focus:ring-light_primary/40 dark:focus:ring-dark_primary/40 text-base outline-none text-dark_bg2 dark:text-light_bg1 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 ></textarea>
               </div>
             </div>

@@ -12,7 +12,7 @@ const SocialLink = ({
 }) => {
   return (
     <a
-      className="ml-3 text-gray-600 hover:text-secondary duration-300"
+      className="ml-3 text-gray-800 dark:text-gray-600 hover:text-light_secondary dark:hover:text-dark_secondary duration-300"
       href={link}
       target="_blank"
     >

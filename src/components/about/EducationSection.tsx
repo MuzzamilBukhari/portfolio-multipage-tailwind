@@ -1,5 +1,7 @@
 import React from "react";
 import EducationCard from "./EducationCard";
+import { FaSchool, FaUniversity } from "react-icons/fa";
+import { IoIosSchool } from "react-icons/io";
 
 const EducationSection = () => {
   const educationData = [
@@ -12,6 +14,7 @@ const EducationSection = () => {
         "Member of Coding Club",
         "Dean's List for Academic Excellence",
       ],
+      icon: FaUniversity,
     },
     {
       institution: "Governor IT",
@@ -22,6 +25,7 @@ const EducationSection = () => {
         "Built a music app as a capstone project",
         "Gained advanced UI design skills using Acertinity library",
       ],
+      icon: FaSchool,
     },
     {
       institution: "Jinnah Govt College",
@@ -32,14 +36,17 @@ const EducationSection = () => {
         "Participated in Science Olympiad",
         "Physics Club President",
       ],
+      icon: IoIosSchool,
     },
   ];
 
   return (
-    <div className="bg-bg2 min-h-screen py-20">
+    <div className="bg-light_bg2 dark:bg-dark_bg2 py-20">
       <div className="flex justify-center items-center flex-col ">
-        <h1 className="sm:text-6xl text-5xl text-white font-bold">Education</h1>
-        <p className="text-lg font-normal text-primary mb-5">
+        <h1 className="sm:text-6xl text-5xl text-dark_bg2 dark:text-light_bg1 font-bold">
+          Education
+        </h1>
+        <p className="text-lg font-normal text-light_primary dark:text-dark_primary mb-5">
           Igniting potential, shaping futures. Where knowledge meets
           opportunity.
         </p>
@@ -52,6 +59,7 @@ const EducationSection = () => {
             degree={edu.degree}
             dates={edu.dates}
             highlights={edu.highlights}
+            // icon={edu.icon}
           />
         ))}
       </div>

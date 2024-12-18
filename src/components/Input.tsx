@@ -28,7 +28,7 @@ const Input = ({
         value={value}
         onChange={onchange}
         placeholder={placeholder}
-        className={`w-full bg-primary bg-opacity-10 rounded border border-primary/60 focus:border-primary focus:bg-transparent focus:ring-2 focus:ring-primary/40 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out ${className}`}
+        className={`w-full bg-light_primary dark:bg-dark_primary bg-opacity-10 dark:bg-opacity-10 rounded border border-light_primary/60 dark:border-dark_primary/60 focus:border-light_primary dark:focus:border-dark_primary focus:bg-transparent focus:ring-2 focus:ring-light_primary/40 dark:focus:ring-dark_primary/40 text-base outline-none text-dark_bg1 dark:text-light_bg1 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out ${className}`}
       />
     </>
   );

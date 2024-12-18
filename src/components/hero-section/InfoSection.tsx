@@ -5,7 +5,7 @@ import bgImg from "../../../public/images/hero.webp";
 const InfoSection = () => {
   return (
     <>
-      <section className="relative bg-cover bg-center h-screen bg-bg1 text-white body-font pt-[200px] md:pt-24">
+      <section className="relative bg-cover bg-center h-screen bg-light_bg1 dark:bg-dark_bg1 text-dark_bg2  dark:text-light_bg1 body-font pt-[200px] md:pt-24">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -20,7 +20,7 @@ const InfoSection = () => {
               Hey, I&apos;m <br className="mt-2" />
               Muzzamil Bukhari
             </h1>
-            <h2 className="title-font text-2xl sm:text-3xl lg:text-4xl mb-4 font-medium text-primary">
+            <h2 className="title-font text-2xl sm:text-3xl lg:text-4xl mb-4 font-medium text-light_primary dark:text-dark_primary">
               Aspiring Web Developer
             </h2>
             <p className="mb-8 leading-relaxed w-full max-w-lg">

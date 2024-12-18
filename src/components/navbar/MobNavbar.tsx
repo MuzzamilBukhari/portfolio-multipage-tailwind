@@ -6,6 +6,7 @@ import Logo from "../../../public/images/pic.jpg";
 import Image from "next/image";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { Button } from "..";
+import DarkMode from "./DarkMode";
 
 const navItems = [
   {
@@ -39,13 +40,13 @@ const MobNavbar = () => {
   };
 
   return (
-    <header className="text-primary body-font bg-bg1 backdrop-blur-md flex flex-col md:hidden w-full fixed top-0 left-0 z-10">
+    <header className="text-light_primary dark:text-dark_primary body-font bg-light_bg1 dark:bg-dark_bg1 backdrop-blur-md flex md:hidden w-full fixed top-0 left-0 z-10">
       <div className="container mx-auto flex justify-between items-center p-5">
         <Link
           href={"/"}
-          className="flex title-font font-medium items-center text-white gap-2 text-xl"
+          className="flex title-font font-medium items-center text-dark_bg2 dark:text-light_bg1 gap-2 text-xl"
         >
-          <div className="border-2 border-primary rounded-[50%]">
+          <div className="border-2 border-light_primary dark:border-dark_primary rounded-[50%]">
             <Image
               src={Logo}
               alt={""}
@@ -53,24 +54,29 @@ const MobNavbar = () => {
             />
           </div>
           <span>
-            Muzzamil<span className="text-primary">Bukhari</span>
+            Muzzamil
+            <span className="text-light_primary dark:text-dark_primary">
+              Bukhari
+            </span>
           </span>
         </Link>
       </div>
-
-      <button
-        className="text-secondary focus:outline-none absolute top-7 right-5 z-20"
-        onClick={toggleNavbar}
-      >
-        {isOpen ? (
-          <RiCloseLine className="w-7 h-7" />
-        ) : (
-          <RiMenu3Line className="w-7 h-7" />
-        )}
-      </button>
+      <div className="flex justify-center items-center mr-16 mt-3">
+        <DarkMode className="w-16" />
+        <button
+          className="text-light_secondary dark:text-dark_secondary focus:outline-none absolute top-7 right-5 z-20"
+          onClick={toggleNavbar}
+        >
+          {isOpen ? (
+            <RiCloseLine className="w-7 h-7" />
+          ) : (
+            <RiMenu3Line className="w-7 h-7" />
+          )}
+        </button>
+      </div>
 
       <nav
-        className={`fixed top-0 right-0 bg-black/95 backdrop-blur-md p-6 w-3/4 h-screen transform duration-300 ease-in-out z-10 ${
+        className={`fixed top-0 right-0 bg-light_bg1/95 dark:bg-dark_bg1/95 backdrop-blur-md p-6 w-3/4 h-screen transform duration-300 ease-in-out z-10 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

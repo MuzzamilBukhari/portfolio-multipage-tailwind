@@ -42,13 +42,15 @@ export default function Projects() {
   // ];
 
   return (
-    <section className="bg-bg1 opacity-[0.98] pt-[220px] pb-32 body-font">
+    <section className="bg-light_bg2 dark:bg-dark_bg1 opacity-[0.98] pt-[220px] pb-32 body-font">
       <div className="flex justify-center items-center flex-col text-center">
-        <h2 className="text-lg font-normal text-primary">
+        <h2 className="text-lg font-normal text-light_primary dark:text-dark_primary">
           Check out my latest projects
         </h2>
-        <h1 className="sm:text-7xl text-6xl text-white font-bold">Portfolio</h1>
-        <p className="mb-8 text-white px-8 mt-2 max-w-[600px]">
+        <h1 className="sm:text-7xl text-6xl text-dark_bg2 dark:text-light_bg1 font-bold">
+          Portfolio
+        </h1>
+        <p className="mb-8 text-dark_bg2 dark:text-light_bg1 px-8 mt-2 max-w-[600px]">
           From building functional calculators to complex quiz systems, each
           project highlights my skills.
         </p>
@@ -93,17 +95,6 @@ export default function Projects() {
             link={"https://bookstore-mb-nu.vercel.app/"}
           />
         </div>
-        {/* <div className="container flex flex-wrap justify-center mx-auto items-center gap-8 mt-20">
-          {projects.map((project) => (
-            <ProjectCard2
-              name={`Project ${project.id} - ${project.name}`}
-              image={project.imageSrc}
-              alt={`Project ${project.id}`}
-              link={project.link}
-              key={project.id}
-            />
-          ))}
-        </div> */}
       </div>
     </section>
   );

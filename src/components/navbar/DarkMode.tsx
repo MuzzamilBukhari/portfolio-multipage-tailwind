@@ -5,7 +5,7 @@ import Image from "next/image";
 import DarkPng from "../../../public/images/dark-mode-button.png";
 import LightPng from "../../../public/images/light-mode-button.png";
 
-const DarkMode = () => {
+const DarkMode = ({ className }: { className?: string }) => {
   const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const DarkMode = () => {
       <Image
         src={theme == "dark" ? DarkPng : LightPng}
         alt=""
-        className="w-12 cursor-pointer transition-all duration-300 drop-shadow"
+        className={`w-12 cursor-pointer transition-all duration-500 drop-shadow ${className}`}
         onClick={() => setTheme((prev) => (prev == "dark" ? "light" : "dark"))}
       />
     </div>

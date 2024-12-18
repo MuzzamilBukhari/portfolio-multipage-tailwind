@@ -9,13 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#69F9EE",
-        // primary: "#4ade80",
-        secondary: "#3FFCEE",
+        light_primary: "#14b8a6",
+        light_secondary: "#0d9488",
+        dark_primary: "#69F9EE",
+        dark_secondary: "#3FFCEE",
         myGry: "#d1d5db",
         footer: "#1F4B48",
-        bg1: "#020617",
-        bg2: "#0f172a",
+        light_bg1: "#ffffff",
+        light_bg2: "#d1d5db",
+        dark_bg1: "#020617",
+        dark_bg2: "#0f172a",
       },
     },
   },

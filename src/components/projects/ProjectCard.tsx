@@ -17,7 +17,7 @@ const ProjectCard = ({
   link: string;
 }) => {
   return (
-    <div className="bg-bg2 border-2 border-secondary text-white rounded-2xl overflow-hidden">
+    <div className="bg-light_bg1 dark:bg-dark_bg2 border-2 border-light_secondary dark:border-dark_secondary text-dark_bg2 dark:text-light_bg1 rounded-2xl overflow-hidden">
       <div className="w-full h-full">
         <Image
           src={BlogPic}
@@ -26,24 +26,28 @@ const ProjectCard = ({
         />
       </div>
       <div className="flex justify-center items-center flex-col md:pl-6 md:items-start px-4 py-6">
-        <h2 className="text-2xl font-bold text-secondary">{title}</h2>
-        <p className="text-myGry mt-2 text-center md:text-left">
+        <h2 className="text-2xl font-bold text-light_secondary dark:text-dark_secondary">
+          {title}
+        </h2>
+        <p className="text-dark_bg2 dark:text-myGry mt-2 text-center md:text-left">
           {description}
         </p>
-        <h3 className="text-xl font-semibold text-primary mt-4">
+        <h3 className="text-xl font-semibold text-light_primary dark:text-dark_primary mt-4">
           Key Features:
         </h3>
-        <ul className="list-disc list-inside mt-2 text-gray-200">
+        <ul className="list-disc list-inside mt-2 text-dark_bg2 dark:text-gray-200">
           {features.map((feature, index) => (
             <li key={index}>{feature}</li>
           ))}
         </ul>
-        <h3 className="text-xl font-semibold text-primary mt-4">Tech Stack:</h3>
+        <h3 className="text-xl font-semibold text-light_primary dark:text-dark_primary mt-4">
+          Tech Stack:
+        </h3>
         <div className="flex justify-center items-center gap-2 mt-2">
           {techStack.map((skill, i) => (
             <div
               key={i}
-              className="border-2 border-primary rounded-xl px-2 py-1 "
+              className="border-2 border-light_primary dark:border-dark_primary rounded-xl px-2 py-1 "
             >
               {skill}
             </div>

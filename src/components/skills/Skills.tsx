@@ -1,79 +1,36 @@
-"use client";
 import React from "react";
-import { FaHtml5, FaJava, FaPython, FaCss3Alt } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
-import { DiJavascript } from "react-icons/di";
-import { TbBrandCpp } from "react-icons/tb";
 import Slider from "react-slick";
+import { FaHtml5, FaCss3Alt, FaPython, FaJava } from "react-icons/fa";
+import { DiJavascript } from "react-icons/di";
+import { SiTypescript } from "react-icons/si";
+import { TbBrandCpp } from "react-icons/tb";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Skills() {
   const languages = [
-    {
-      id: 1,
-      name: "HTML",
-      icon: FaHtml5,
-    },
-    {
-      id: 2,
-      name: "CSS",
-      icon: FaCss3Alt,
-    },
-    {
-      id: 3,
-      name: "Javascript",
-      icon: DiJavascript,
-    },
-    {
-      id: 4,
-      name: "Typescript",
-      icon: SiTypescript,
-    },
-    {
-      id: 5,
-      name: "Python",
-      icon: FaPython,
-    },
-    {
-      id: 6,
-      name: "Java",
-      icon: FaJava,
-    },
-    {
-      id: 7,
-      name: "C++",
-      icon: TbBrandCpp,
-    },
+    { id: 1, name: "HTML", icon: FaHtml5 },
+    { id: 2, name: "CSS", icon: FaCss3Alt },
+    { id: 3, name: "JavaScript", icon: DiJavascript },
+    { id: 4, name: "TypeScript", icon: SiTypescript },
+    { id: 5, name: "Python", icon: FaPython },
+    { id: 6, name: "Java", icon: FaJava },
+    { id: 7, name: "C++", icon: TbBrandCpp },
   ];
-
-  // const platform = [
-  //   {
-  //     id: 1,
-  //     name: "Github",
-  //     icon: FaGithub,
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "Vercel",
-  //     icon: CgVercel,
-  //   },
-  // ];
 
   const settings = {
     dots: true,
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 800,
-    autoplaySpeed: 2000,
-    pauseOnHover: true,
-    cssEase: "linear",
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true,
           dots: true,
         },
@@ -81,9 +38,8 @@ export default function Skills() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
       {
@@ -95,18 +51,6 @@ export default function Skills() {
       },
     ],
   };
-  return (
-    <section className="flex justify-center items-center flex-col gap-16 px-6 py-10 sm:px-12 bg-white text-black dark:bg-gray-900 dark:text-white ">
-      <div className="block mx-auto">
-        <h1>Hello</h1>
-      </div>
-      <div className="w-full p-4">
-        <Slider {...settings}>
-          {languages?.map((testimonial) => (
-            <div key={testimonial.id}></div>
-          ))}
-        </Slider>
-      </div>
-    </section>
-  );
+
+  return <div className="slider-container">hello</div>;
 }

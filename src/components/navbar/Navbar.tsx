@@ -33,13 +33,13 @@ const Navbar = () => {
     },
   ];
   return (
-    <header className="bg-white text-bg1 dark:text-white dark:bg-bg1 body-font w-full fixed z-10 hidden md:block">
+    <header className="bg-light_bg1 text-light_primary dark:text-dark_primary dark:bg-dark_bg1 body-font w-full fixed z-10 hidden md:block">
       <div className="flex justify-between items-center md:px-3 lg:px-12 py-4">
         <Link
           href={"/"}
-          className="flex title-font font-medium items-center text-white gap-2 text-xl"
+          className="flex title-font font-medium items-center text-dark_bg2 dark:text-light_bg1 gap-2 text-xl"
         >
-          <div className="border-2 border-primary rounded-[50%]">
+          <div className="border-2 border-light_primary dark:border-dark_primary rounded-[50%]">
             <Image
               src={Logo}
               alt={""}
@@ -47,7 +47,10 @@ const Navbar = () => {
             />
           </div>
           <span>
-            Muzzamil<span className="text-primary">Bukhari</span>
+            Muzzamil
+            <span className="text-light_primary dark:text-dark_primary">
+              Bukhari
+            </span>
           </span>
         </Link>
         <div className="flex justify-center items-center gap-2 lg:gap-12">
