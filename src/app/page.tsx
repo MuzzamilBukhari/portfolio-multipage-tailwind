@@ -1,4 +1,4 @@
-import { Button, Contact, InfoSection, Skills } from "@/components/";
+import { Button, Contact, InfoSection } from "@/components/";
 import { ProjectCard } from "@/components/";
 import Link from "next/link";
 
