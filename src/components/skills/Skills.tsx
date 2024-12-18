@@ -1,8 +1,8 @@
 import React from "react";
-import { FaHtml5, FaCss3Alt, FaPython, FaJava } from "react-icons/fa";
-import { DiJavascript } from "react-icons/di";
-import { SiTypescript } from "react-icons/si";
-import { TbBrandCpp } from "react-icons/tb";
+// import { FaHtml5, FaCss3Alt, FaPython, FaJava } from "react-icons/fa";
+// import { DiJavascript } from "react-icons/di";
+// import { SiTypescript } from "react-icons/si";
+// import { TbBrandCpp } from "react-icons/tb";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
