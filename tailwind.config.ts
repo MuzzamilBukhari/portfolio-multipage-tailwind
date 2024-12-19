@@ -20,6 +20,15 @@ const config: Config = {
         dark_bg1: "#020617",
         dark_bg2: "#0f172a",
       },
+      keyframes: {
+        moveBorder: {
+          "0%": { backgroundPosition: "0% 50%" },
+          "100%": { backgroundPosition: "100% 50%" },
+        },
+      },
+      animation: {
+        moveBorder: "moveBorder 3s linear infinite",
+      },
     },
   },
   darkMode: "class",

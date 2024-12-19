@@ -45,6 +45,7 @@ const MobNavbar = () => {
         <Link
           href={"/"}
           className="flex title-font font-medium items-center text-dark_bg2 dark:text-light_bg1 gap-2 text-xl"
+          onClick={toggleNavbar}
         >
           <div className="border-2 border-light_primary dark:border-dark_primary rounded-[50%]">
             <Image
@@ -82,12 +83,14 @@ const MobNavbar = () => {
       >
         <div className="flex flex-col items-center gap-6 justify-center h-full">
           {navItems.map((item) => (
-            <NavLink slug={item.slug} key={item.id}>
+            <NavLink slug={item.slug} key={item.id} onclick={toggleNavbar}>
               {item.name}
             </NavLink>
           ))}
           <a href="/resume.pdf" download>
-            <Button type="button">Download Resume</Button>
+            <Button type="button" onclick={toggleNavbar}>
+              Download Resume
+            </Button>
           </a>
         </div>
       </nav>

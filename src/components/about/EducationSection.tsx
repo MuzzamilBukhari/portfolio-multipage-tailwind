@@ -42,16 +42,22 @@ const EducationSection = () => {
 
   return (
     <div className="bg-light_bg2 dark:bg-dark_bg2 py-20">
-      <div className="flex justify-center items-center flex-col ">
+      <div
+        className="flex justify-center items-center flex-col"
+        data-aos="fade-up"
+      >
         <h1 className="sm:text-6xl text-5xl text-dark_bg2 dark:text-light_bg1 font-bold">
           Education
         </h1>
-        <p className="text-lg font-normal text-light_primary dark:text-dark_primary mb-5">
+        <p className="text-lg font-normal text-light_primary dark:text-dark_primary mb-5 text-center px-5">
           Igniting potential, shaping futures. Where knowledge meets
           opportunity.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center mt-16 gap-6">
+      <div
+        className="flex flex-wrap justify-center mt-16 gap-6"
+        data-aos="fade-right"
+      >
         {educationData.map((edu, index) => (
           <EducationCard
             key={index}

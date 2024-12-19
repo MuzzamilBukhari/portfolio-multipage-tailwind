@@ -31,21 +31,32 @@ const Contact = () => {
   };
 
   return (
-    <section className="text-dark_bg2 dark:text-light_bg1 bg-light_bg1 dark:bg-dark_bg1 opacity-[0.99] body-font relative">
+    <section className="text-dark_bg2 dark:text-light_bg1 bg-teal-100/40 dark:bg-dark_bg1 opacity-[0.99] body-font relative">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
-          <h1 className="sm:text-7xl text-6xl font-bold title-font mb-1 ">
+          <h1
+            className="sm:text-7xl text-6xl font-bold title-font mb-1 "
+            data-aos="fade-down"
+          >
             Contact{" "}
             <span className="text-light_primary dark:text-dark_primary">
               Us
             </span>
           </h1>
-          <p className="lg:w-2/3 mx-auto text-light_primary dark:text-dark_primary leading-relaxed text-base">
+          <p
+            className="lg:w-2/3 mx-auto text-light_primary dark:text-dark_primary leading-relaxed text-base"
+            data-aos="fade-up"
+          >
             Please fill this form if you have any queries or a message.
           </p>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
-          <form onSubmit={handleSubmit} className="flex flex-wrap -m-2">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-wrap"
+            data-aos="zoom-up"
+            data-aos-duration="2000"
+          >
             <div className="p-2 w-full space-y-3">
               <div className="relative">
                 <Input

@@ -17,7 +17,11 @@ const ProjectCard = ({
   link: string;
 }) => {
   return (
-    <div className="bg-light_bg1 dark:bg-dark_bg2 border-2 border-light_secondary dark:border-dark_secondary text-dark_bg2 dark:text-light_bg1 rounded-2xl overflow-hidden">
+    <div
+      className="bg-light_bg1 dark:bg-dark_bg2 text-dark_bg2 dark:text-light_bg1 border-4 border-light_primary dark:border-dark_primary rounded-2xl overflow-hidden "
+      data-aos="zoom-in"
+      data-aos-duration="1500"
+    >
       <div className="w-full h-full">
         <Image
           src={BlogPic}
@@ -35,7 +39,7 @@ const ProjectCard = ({
         <h3 className="text-xl font-semibold text-light_primary dark:text-dark_primary mt-4">
           Key Features:
         </h3>
-        <ul className="list-disc list-inside mt-2 text-dark_bg2 dark:text-gray-200">
+        <ul className="list-disc list-inside mt-2 text-dark_bg2 dark:text-gray-200 text-left ml-2">
           {features.map((feature, index) => (
             <li key={index}>{feature}</li>
           ))}
@@ -43,7 +47,7 @@ const ProjectCard = ({
         <h3 className="text-xl font-semibold text-light_primary dark:text-dark_primary mt-4">
           Tech Stack:
         </h3>
-        <div className="flex justify-center items-center gap-2 mt-2">
+        <div className="flex flex-wrap justify-center items-center gap-2 mt-2">
           {techStack.map((skill, i) => (
             <div
               key={i}

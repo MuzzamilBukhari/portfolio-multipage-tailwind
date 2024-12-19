@@ -43,7 +43,11 @@ export default function Projects() {
 
   return (
     <section className="bg-light_bg2 dark:bg-dark_bg1 opacity-[0.98] pt-[220px] pb-32 body-font">
-      <div className="flex justify-center items-center flex-col text-center">
+      <div
+        className="flex justify-center items-center flex-col text-center"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+      >
         <h2 className="text-lg font-normal text-light_primary dark:text-dark_primary">
           Check out my latest projects
         </h2>
