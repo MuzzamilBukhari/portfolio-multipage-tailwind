@@ -1,55 +1,57 @@
+"use client";
 import React from "react";
-// import { FaHtml5, FaCss3Alt, FaPython, FaJava } from "react-icons/fa";
-// import { DiJavascript } from "react-icons/di";
-// import { SiTypescript } from "react-icons/si";
-// import { TbBrandCpp } from "react-icons/tb";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import SkillCard from "./SkillCard";
 
-export default function Skills() {
-  // const languages = [
-  //   { id: 1, name: "HTML", icon: FaHtml5 },
-  //   { id: 2, name: "CSS", icon: FaCss3Alt },
-  //   { id: 3, name: "JavaScript", icon: DiJavascript },
-  //   { id: 4, name: "TypeScript", icon: SiTypescript },
-  //   { id: 5, name: "Python", icon: FaPython },
-  //   { id: 6, name: "Java", icon: FaJava },
-  //   { id: 7, name: "C++", icon: TbBrandCpp },
-  // ];
+export default function Skill() {
+  const skills = [
+    { id: 1, name: "React", percentage: 85 },
+    { id: 2, name: "HTML & CSS", percentage: 90 },
+    { id: 3, name: "JavaScript", percentage: 80 },
+    { id: 4, name: "TypeScript", percentage: 75 },
+    { id: 5, name: "Data Structures & Algorithms (DSA)", percentage: 70 },
+    { id: 6, name: "Object-Oriented Programming (OOP)", percentage: 85 },
+    { id: 7, name: "DBMS", percentage: 80 },
+    { id: 8, name: "Operating Systems (OS)", percentage: 75 },
+    { id: 9, name: "Assembly Language", percentage: 60 },
+    { id: 10, name: "Tailwind CSS", percentage: 85 },
+    { id: 11, name: "Graphic Design", percentage: 70 },
+    { id: 12, name: "Next.js", percentage: 65 },
+    { id: 13, name: "Sanity", percentage: 55 },
+    { id: 14, name: "Git & GitHub", percentage: 60 },
+    { id: 15, name: "Vercel", percentage: 70 },
+    { id: 16, name: "Python", percentage: 65 },
+    { id: 17, name: "Appwrite", percentage: 45 },
+  ];
 
-  // const settings = {
-  //   dots: true,
-  //   infinite: false,
-  //   speed: 500,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 4,
-  //   initialSlide: 0,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: 3,
-  //         slidesToScroll: 3,
-  //         infinite: true,
-  //         dots: true,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 600,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 2,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //   ],
-  // };
+  return (
+    <div id="Skill" className="bg-light_bg1 dark:bg-dark_bg1 py-12">
+      <section className="">
+        <div
+          className="text-center mb-16 pt-10"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold title-font text-dark_bg2 dark:text-light_bg1 mb-4">
+            My{" "}
+            <span className="text-light_primary dark:text-dark_primary underline">
+              Skills
+            </span>
+          </h1>
+          <p className="text-dark_bg2 dark:text-light_bg1 text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto px-4 pt-8">
+            Crafting solutions with code, design, and innovation
+          </p>
+        </div>
 
-  return <div className="slider-container">hello</div>;
+        <div className="flex gap-6 px-8 items-center justify-center flex-wrap">
+          {skills.map((skill) => (
+            <SkillCard
+              key={skill.id}
+              skill={skill.name}
+              percentage={skill.percentage}
+            />
+          ))}
+        </div>
+      </section>
+    </div>
+  );
 }

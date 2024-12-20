@@ -1,23 +1,30 @@
 import React from "react";
-import { IconType } from "react-icons";
 
-const SkillCard = ({
-  skill,
-  icon: Icon,
-  size = 30,
-  className,
-}: {
+interface SkillCardProps {
   skill: string;
-  icon: IconType;
-  size?: number;
-  className?: string;
-}) => {
+  percentage: number;
+}
+
+const SkillCard = ({ skill, percentage }: SkillCardProps) => {
   return (
     <div
-      className={`flex flex-col justify-center w-28 h-28 items-center bg-primary text-white rounded-md px-4 py-4 transition-transform duration-300 ease-in-out transform hover:scale-110 ${className} ring-primary shadow-lg shadow-secondary/60`}
+      className="min-w-[500px] bg-light_bg2/40 dark:bg-dark_bg1 border-2 border-light_primary dark:border-dark_primary p-4 rounded-lg shadow-md"
+      data-aos="flip-right"
     >
-      <Icon size={size} className="" />
-      <span className={`mt-2 text-lg font-normal `}>{skill}</span>
+      <div className="flex justify-between items-center mb-2">
+        <h3 className="text-lg font-semibold text-dark_bg2 dark:text-light_bg1">
+          {skill}
+        </h3>
+        <span className="text-sm font-medium text-dark_bg2 dark:text-light_bg2">
+          {percentage}%
+        </span>
+      </div>
+      <div className="w-full bg-light_bg2 dark:bg-gray-700 rounded-full h-3">
+        <div
+          className="bg-light_secondary dark:bg-dark_secondary h-3 rounded-full"
+          style={{ width: `${percentage}%` }}
+        ></div>
+      </div>
     </div>
   );
 };

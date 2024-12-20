@@ -1,6 +1,6 @@
 "use client";
 
-import { Contact, InfoSection } from "@/components/";
+import { Contact, InfoSection, Skills } from "@/components/";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -21,7 +21,7 @@ export default function Home() {
     <>
       <InfoSection />
       <Featured />
-
+      <Skills />
       <Contact />
     </>
   );
