@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import BlogPic from "../../../public/images/blog.jpg";
 import Button from "../Button";
 
 const ProjectCard = ({
@@ -9,12 +8,14 @@ const ProjectCard = ({
   features,
   techStack,
   link,
+  imgUrl,
 }: {
   title: string;
   description: string;
   features: string[];
   techStack: string[];
   link: string;
+  imgUrl: string;
 }) => {
   return (
     <div
@@ -24,12 +25,14 @@ const ProjectCard = ({
     >
       <div className="w-full h-full">
         <Image
-          src={BlogPic}
+          src={imgUrl}
           alt="img"
           className="w-full h-64 object-cover object-center"
+          width={300}
+          height={256}
         />
       </div>
-      <div className="flex justify-center items-center flex-col md:pl-6 md:items-start px-4 py-6">
+      <div className="flex justify-center items-center flex-col md:pl-6 md:items-start px-4 py-6 md:h-[450px] lg:h-[420px]">
         <h2 className="text-2xl font-bold text-light_secondary dark:text-dark_secondary">
           {title}
         </h2>
@@ -60,7 +63,7 @@ const ProjectCard = ({
         <div className="flex justify-center items-center w-full mt-8">
           {link && (
             <Button type="button">
-              <a href={link} target="_blank" rel="noopener noreferrer">
+              <a href={link} target="_blank">
                 View Project
               </a>
             </Button>

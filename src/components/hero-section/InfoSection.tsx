@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button";
 import bgImg from "../../../public/images/hero.webp";
+import Link from "next/link";
 
 const InfoSection = () => {
   return (
@@ -39,9 +40,14 @@ const InfoSection = () => {
               enjoy learning new tools and applying them to create dynamic,
               user-friendly websites.
             </p>
-            <Button transition="zoom-in" type="button">
-              Hire me
-            </Button>
+            <Link
+              href={"https://www.linkedin.com/in/muzzamilbukhari/"}
+              target="_blank"
+            >
+              <Button transition="zoom-in" type="button">
+                Hire me
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

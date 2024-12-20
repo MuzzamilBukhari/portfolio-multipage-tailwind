@@ -1,46 +1,8 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import projects from "@/data/projects/ProjectsData";
 
 export default function Projects() {
-  // const projects = [
-  //   {
-  //     id: 1,
-  //     name: "QR Code Generator",
-  //     imageSrc: "/images/",
-  //     link: "https://qr-code-generator-lake.vercel.app/",
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "Age Calculator",
-  //     imageSrc: "/images/agecal.jpg",
-  //     link: "https://age-calculator-green-sigma.vercel.app/",
-  //   },
-  //   {
-  //     id: 3,
-  //     name: "Book Store Website",
-  //     imageSrc: "/images/bookstore.jpg",
-  //     link: "https://bookstore-mb-nu.vercel.app/",
-  //   },
-  //   {
-  //     id: 4,
-  //     name: "Blogger Website",
-  //     imageSrc: "/images/blog.jpg",
-  //     link: "https://blogger-web.vercel.app/",
-  //   },
-  //   {
-  //     id: 5,
-  //     name: "Process Control Block",
-  //     imageSrc: "/images/pcb.png",
-  //     link: "https://github.com/MuzzamilBukhari/process-control-block.git",
-  //   },
-  //   {
-  //     id: 6,
-  //     name: "Social Network Graph",
-  //     imageSrc: "/images/networkgraph.jpg",
-  //     link: "https://github.com/MuzzamilBukhari/DSA-Project.git",
-  //   },
-  // ];
-
   return (
     <section className="bg-light_bg2 dark:bg-dark_bg1 opacity-[0.98] pt-[220px] pb-32 body-font">
       <div
@@ -58,46 +20,18 @@ export default function Projects() {
           From building functional calculators to complex quiz systems, each
           project highlights my skills.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 px-12 justify-center gap-8 items-center mt-20 ">
-          <ProjectCard
-            title={"Online Bookstore Website"}
-            description={
-              "A responsive online bookstore showcasing sleek UI design, built using React and Tailwind CSS."
-            }
-            features={[
-              "Developed a mobile-first design using modern CSS techniques.",
-              "Implemented a custom hamburger menu for seamless navigation.",
-              "Showcased testimonials with a smooth slider using React Slick.",
-            ]}
-            techStack={["React", "Tailwind CSS", "Next.js", "Appwrite"]}
-            link={"https://bookstore-mb-nu.vercel.app/"}
-          />
-          <ProjectCard
-            title={"Online Bookstore Website"}
-            description={
-              "A responsive online bookstore showcasing sleek UI design, built using React and Tailwind CSS."
-            }
-            features={[
-              "Developed a mobile-first design using modern CSS techniques.",
-              "Implemented a custom hamburger menu for seamless navigation.",
-              "Showcased testimonials with a smooth slider using React Slick.",
-            ]}
-            techStack={["React", "Tailwind CSS", "Next.js", "Appwrite"]}
-            link={"https://bookstore-mb-nu.vercel.app/"}
-          />
-          <ProjectCard
-            title={"Online Bookstore Website"}
-            description={
-              "A responsive online bookstore showcasing sleek UI design, built using React and Tailwind CSS."
-            }
-            features={[
-              "Developed a mobile-first design using modern CSS techniques.",
-              "Implemented a custom hamburger menu for seamless navigation.",
-              "Showcased testimonials with a smooth slider using React Slick.",
-            ]}
-            techStack={["React", "Tailwind CSS", "Next.js", "Appwrite"]}
-            link={"https://bookstore-mb-nu.vercel.app/"}
-          />
+        <div className="grid grid-cols-1 md:grid-cols-2 px-12 gap-8 justify-center items-center mt-20 ">
+          {projects.map((project) => (
+            <ProjectCard
+              key={project.id}
+              title={project.title}
+              description={project.description}
+              techStack={project.techStack}
+              features={project.features}
+              link={project.projectLink}
+              imgUrl={project.imgUrl}
+            />
+          ))}
         </div>
       </div>
     </section>

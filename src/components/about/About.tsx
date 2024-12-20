@@ -29,18 +29,35 @@ const About = () => {
               data-aos-duration="2000"
             >
               <p>
-                - I specialize in web development and graphic design, creating
-                responsive, user-friendly solutions using technologies like
-                React, Next.js, and Tailwind CSS.
+                - I&apos;m a passionate web developer and graphic designer with
+                a knack for crafting responsive and user-friendly digital
+                experiences.
               </p>
               <p>
-                - My skills also extend to Data Structures and Algorithms (DSA),
-                Object-Oriented Programming (OOP), DBMS, and assembly language.
+                - Currently in my second year of university, I specialize in
+                building solutions that combine modern technologies with
+                creative designs. Whether it&apos;s developing efficient web
+                applications or designing eye-catching graphics, I thrive on
+                turning ideas into impactful realities.
               </p>
               <p>
-                - With experience in tools like Appwrite and Google Sheets
-                automation, I focus on delivering efficient and visually
-                appealing results while staying current with the latest trends.
+                - With skills in Data Structures and Algorithms (DSA),
+                Object-Oriented Programming (OOP), DBMS, assembly language, and
+                operating systems, I approach challenges with both technical
+                expertise and a problem-solving mindset.
+              </p>
+              <p>
+                - My journey in web development has led me to explore frameworks
+                like React and Next.js, while my design background equips me to
+                create visually appealing and intuitive interfaces. I believe in
+                continuously learning and evolving, ensuring my work stays
+                innovative and up-to-date.
+              </p>
+              <p>
+                - Feel free to explore my portfolio to see some of my recent
+                projects and designs. I&apos;m always excited to connect,
+                collaborate, and grow. If you&apos;d like to discuss a project
+                or simply say hello, don&apos;t hesitate to reach out!
               </p>
             </div>
           </div>
