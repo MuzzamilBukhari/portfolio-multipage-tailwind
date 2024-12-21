@@ -42,7 +42,7 @@ export default function Skill() {
           </p>
         </div>
 
-        <div className="flex gap-6 px-8 items-center justify-center flex-wrap">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 px-8 items-center justify-center flex-wrap">
           {skills.map((skill) => (
             <SkillCard
               key={skill.id}

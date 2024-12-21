@@ -27,7 +27,8 @@ const Contact = () => {
         "73YB3ttjRcQpM-3_2"
       )
       .then(() => setMessage("Email sent successfully..."))
-      .catch(() => setMessage("Email not send!"));
+      .catch(() => setMessage("Email not send!"))
+      .finally(() => setFormData({ name: "", email: "", message: "" }));
   };
 
   return (
@@ -94,7 +95,7 @@ const Contact = () => {
                 ></textarea>
               </div>
             </div>
-            <div className="p-2 w-full flex justify-center items-center">
+            <div className="p-2 w-full flex justify-center flex-col items-center">
               <p>{message}</p>
               <Button type="submit" className="">
                 Submit

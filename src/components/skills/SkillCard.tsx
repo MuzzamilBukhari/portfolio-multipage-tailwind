@@ -8,7 +8,7 @@ interface SkillCardProps {
 const SkillCard = ({ skill, percentage }: SkillCardProps) => {
   return (
     <div
-      className="min-w-[500px] bg-light_bg2/40 dark:bg-dark_bg1 border-2 border-light_primary dark:border-dark_primary p-4 rounded-lg shadow-md"
+      className=" bg-light_bg2/40 dark:bg-dark_bg1 border-2 border-light_primary dark:border-dark_primary p-4 rounded-lg shadow-md"
       data-aos="flip-right"
     >
       <div className="flex justify-between items-center mb-2">
