@@ -26,9 +26,9 @@ const Contact = () => {
         formData,
         "73YB3ttjRcQpM-3_2"
       )
-      .then(() => setMessage("Email sent successfully..."))
-      .catch(() => setMessage("Email not send!"))
-      .finally(() => setFormData({ name: "", email: "", message: "" }));
+        .then(() => setMessage("Email sent successfully..."))
+        .catch(() => setMessage("Email not send!"))
+        .finally(() => setFormData({ name: "", email: "", message: "" }));
   };
 
   return (
