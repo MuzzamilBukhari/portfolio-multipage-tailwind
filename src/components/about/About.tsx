@@ -34,35 +34,19 @@ const About = () => {
               data-aos-duration="2000"
             >
               <p>
-                - I&apos;m a passionate web developer and graphic designer with
-                a knack for crafting responsive and user-friendly digital
-                experiences.
+                - I&apos;m a passionate full-stack web developer with a knack for crafting responsive, scalable, and user-friendly digital experiences.
               </p>
               <p>
-                - Currently in my second year of university, I specialize in
-                building solutions that combine modern technologies with
-                creative designs. Whether it&apos;s developing efficient web
-                applications or designing eye-catching graphics, I thrive on
-                turning ideas into impactful realities.
+                - Currently in my final year of university, I focus on building modern, efficient solutions using both front-end and back-end technologies. Whether it&apos;s developing smooth interfaces or architecting solid server-side logic, I thrive on turning ideas into impactful realities.
               </p>
               <p>
-                - With skills in Data Structures and Algorithms (DSA),
-                Object-Oriented Programming (OOP), DBMS, assembly language, and
-                operating systems, I approach challenges with both technical
-                expertise and a problem-solving mindset.
+                - With skills in Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP), DBMS, assembly language, operating systems, networking, and network security, I approach challenges with strong technical depth and a problem-solving mindset.
               </p>
               <p>
-                - My journey in web development has led me to explore frameworks
-                like React and Next.js, while my design background equips me to
-                create visually appealing and intuitive interfaces. I believe in
-                continuously learning and evolving, ensuring my work stays
-                innovative and up-to-date.
+                - My journey in web development has led me to work with technologies like React, Next.js, Express.js, and PostgreSQL, enabling me to build full-stack applications that are clean, fast, and maintainable.
               </p>
               <p>
-                - Feel free to explore my portfolio to see some of my recent
-                projects and designs. I&apos;m always excited to connect,
-                collaborate, and grow. If you&apos;d like to discuss a project
-                or simply say hello, don&apos;t hesitate to reach out!
+                - Feel free to explore my portfolio to see some of my recent projects. I'm always excited to connect, collaborate, and grow. If you'd like to discuss a project or simply say hello, don't hesitate to reach out!
               </p>
             </div>
           </div>

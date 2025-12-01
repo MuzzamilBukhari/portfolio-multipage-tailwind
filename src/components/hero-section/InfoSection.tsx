@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../Button";
-import bgImg from "../../../public/images/hero.webp";
 import Link from "next/link";
 
 const InfoSection = () => {
@@ -8,9 +7,6 @@ const InfoSection = () => {
     <>
       <section
         className="relative bg-cover bg-center h-screen bg-light_bg1 dark:bg-dark_bg1 text-dark_bg2  dark:text-light_bg1 body-font pt-[200px] md:pt-[90px]"
-        style={{
-          backgroundImage: `url(${bgImg})`,
-        }}
       >
         <div className="container mx-auto flex px-5 py-12 lg:py-24 flex-col-reverse lg:flex-row items-center justify-center duration-300">
           <div className="lg:flex-grow lg:w-[40%] flex flex-col lg:items-start lg:text-left mb-12 lg:mb-0 items-center text-center lg:ml-20">
@@ -27,7 +23,7 @@ const InfoSection = () => {
               data-aos="zoom-out"
               data-aos-duration="500"
             >
-              Aspiring Web Developer
+             Crafting Clean, Fast & Modern Web Experiences
             </h2>
             <p
               className="mb-8 leading-relaxed w-full max-w-lg"
@@ -35,10 +31,7 @@ const InfoSection = () => {
               data-aos-duration="500"
               data-aos-delay="100"
             >
-              I am a software developer skilled in building web applications
-              using modern technologies like React, Next.js, and Appwrite. I
-              enjoy learning new tools and applying them to create dynamic,
-              user-friendly websites.
+            I&apos;m a full-stack web developer who loves turning ideas into smooth, fast and interactive digital experiences. Using React, Next.js, Express.js, and PostgreSQL, I build products that feel clean, intuitive, and performance-focused. Always learning, always shipping.
             </p>
             <Link
               href={"https://www.linkedin.com/in/muzzamilbukhari/"}

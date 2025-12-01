@@ -15,6 +15,8 @@ const EducationSection = () => {
         "Object Oriented using Java",
         "Database Management System",
         "Assembly Language",
+        "Computer Networking",
+        "Network Security"
       ],
       icon: FaUniversity,
     },
@@ -26,6 +28,7 @@ const EducationSection = () => {
         "Learned Next.js App Router and Sanity as Backend",
         "Built a Blog Website 'DSA Hub'",
         "Complete Ecommerce Store",
+        "Learns OpenAI Agents SDK"
       ],
       icon: FaSchool,
     },

@@ -1,6 +1,22 @@
 const projects = [
   {
     id: 1,
+    title: "Rezupro – Resume Builder",
+    description:
+      "A modern and easy-to-use resume builder built with Next.js and Tailwind CSS. It allows users to quickly generate professional resumes with a clean UI and smooth UX.",
+    imgUrl: "/images/projects/RezuPro.jpg",
+    features: [
+      "Professional resume builder UI",
+      "Responsive and clean design",
+      "Fast performance with Next.js",
+      "Minimal and distraction-free layout",
+    ],
+    techStack: ["Next.js", "Tailwind CSS"],
+    projectLink: "https://rezupro.vercel.app/",
+    featured: true,
+  },
+  {
+    id: 2,
     title: "Online Bookstore",
     description:
       "A beautifully designed online bookstore focusing on UI and design using React and Tailwind CSS.",
@@ -15,22 +31,42 @@ const projects = [
     featured: false,
   },
   {
-    id: 2,
-    title: "Blogger Site",
+    id: 3,
+    title: "Shoeway – Shoes E-commerce Store",
     description:
-      "A blogging platform built with React and Appwrite to manage user data and posts.",
-    imgUrl: "/images/projects/blogger-site.jpg",
+      "A stylish shoes e-commerce storefront built with Next.js and Tailwind CSS, using Sanity CMS as the headless admin/dashboard. The frontend (product listing, product pages, search, and UI) is complete and responsive; however the cart & checkout functionality is currently disabled because the Sanity free plan expired and the admin integrations are limited until the CMS is reactivated or migrated.",
+    imgUrl: "/images/projects/shoeway.png",
     features: [
-      "User authentication",
-      "Post creation and management",
-      "Real-time updates",
+      "Product catalog with categories and filters",
+      "Detailed product pages with image gallery",
+      "Sanity-powered admin dashboard for product & content management",
+      "Responsive mobile-first design",
+      "Search and basic product sorting",
+      "Cart & checkout integrated but currently non-functional (pending Sanity plan renewal or migration)",
     ],
-    techStack: ["React", "Appwrite"],
-    projectLink: "https://blogger-web.vercel.app/",
+    techStack: ["Next.js", "Tailwind CSS", "Sanity CMS"],
+    projectLink: "https://ecommerce-marketplace-hackathon.vercel.app/",
     featured: false,
   },
   {
-    id: 3,
+    id: 4,
+    title: "Embroidery & Graphic Design Agency Portfolio",
+    description:
+      "A professional portfolio website for an embroidery and graphic design agency, featuring high-quality work samples, service details, and a visually attractive showcase layout.",
+    imgUrl: "/images/projects/coderateash.png",
+    features: [
+      "Showcase of embroidery and graphic design work",
+      "Clean and aesthetic portfolio layout",
+      "Services section with detailed offerings",
+      "High-quality gallery for designs",
+      "Fully responsive UI",
+    ],
+    techStack: ["Next.js", "Tailwind CSS"],
+    projectLink: "https://coderateash.vercel.app/", 
+    featured: false,
+  },
+  {
+    id: 5,
     title: "DSAHub Blog Site",
     description:
       "A blogging site about Data Structures and Algorithms built using Next.js and Sanity CMS.",
@@ -41,7 +77,7 @@ const projects = [
     featured: true,
   },
   {
-    id: 4,
+    id: 6,
     title: "Portfolio Website",
     description:
       "A personal portfolio showcasing projects, skills, and achievements.",
@@ -52,7 +88,7 @@ const projects = [
     featured: true,
   },
   {
-    id: 5,
+    id: 7,
     title: "Gym Website",
     description:
       "A visually appealing website for a gym, highlighting services and facilities.",
@@ -67,7 +103,7 @@ const projects = [
     featured: true,
   },
   {
-    id: 6,
+    id: 8,
     title: "Process Control Block (PCB) in OS",
     description:
       "A project demonstrating process scheduling algorithms with a UI.",
@@ -82,7 +118,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 7,
+    id: 9,
     title: "Social Network Graph in DSA",
     description:
       "A terminal-based project using multilists to implement a social network graph.",
@@ -94,10 +130,10 @@ const projects = [
     ],
     techStack: ["C++"],
     projectLink: "https://github.com/MuzzamilBukhari/DSA-Project.git",
-    featured: true,
+    featured: false,
   },
   {
-    id: 8,
+    id: 10,
     title: "Ecommerce Website Design",
     description: "A modern eCommerce website design built with Next.js.",
     imgUrl: "/images/projects/ecommerce-website.jpg",
@@ -111,7 +147,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 9,
+    id: 11,
     title: "Age Calculator",
     description:
       "A simple and interactive age calculator built with HTML, CSS, and JavaScript.",
@@ -122,7 +158,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 10,
+    id: 12,
     title: "QR Code Generator",
     description:
       "A tool to generate QR codes using an API and basic web technologies.",

@@ -23,7 +23,7 @@ const socialLinks = [
   {
     id: 4,
     icon: FaFacebook,
-    link: "https://www.facebook.com/muzzamilbukhari",
+    link: "https://www.facebook.com/mmuzzamilbukhari",
   },
 ];
 
